@@ -1,5 +1,7 @@
 # 🎨 Marlyn Theme
 
+### Inspirado en <https://github.com/Gentleman-Programming/gentleman-kanagawa-blur>
+
 ## 📦 Installation
 
 ### [lazy.nvim](https://github.com/folke/lazy.nvim) (Recommended)
