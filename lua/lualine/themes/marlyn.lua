@@ -46,6 +46,26 @@ local palettes = {
 		muted = "#9499a3",
 		overlay = "#2a2d36",
 	},
+	moonlight = {
+		-- Base colors - Tonos lunares
+		bg = "#1c1e26",
+		fg = "#e3e5eb",
+
+		-- Paleta MOONLIGHT 🌙 (tonos fríos con 20% brillo)
+		yellow = "#f7e8c8",   -- Crema lunar
+		red = "#f0b4bb",      -- Rosa perla
+		green = "#b8e6d5",    -- Verde menta glacial
+		purple = "#d4c8e8",   -- Lavanda luminosa
+		orange = "#f5d4c4",   -- Durazno suave
+		blue = "#c4d8ed",     -- Azul hielo
+		cyan = "#c8e8e8",     -- Aqua glacial
+		magenta = "#e8d4e8",  -- Malva lunar
+
+		-- Utility colors - Grises azulados
+		subtle = "#a3a6b3",
+		muted = "#858896",
+		overlay = "#2d3038",
+	},
 }
 
 local colors = palettes[variant] or palettes.pastel

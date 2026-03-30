@@ -260,6 +260,138 @@ local palettes = {
 
 		none = "NONE",
 	},
+
+	-- ═══════════════════════════════════════════════════════════════════
+	-- 🌙 MOONLIGHT VARIANT - Nueva paleta única con tonos neutros y pasteles luminosos
+	-- Inspirada en la luz de la luna - tonos fríos, neutros y pasteles con 20% brillo
+	-- ═══════════════════════════════════════════════════════════════════
+	moonlight = {
+		bg_dark = "none",
+		gray0 = "none",
+
+		-- Backgrounds con tonos azul-gris suaves
+		gray1 = "#1c1e26",        -- Fondo principal (azul oscuro neutro)
+		gray2 = "#24262f",        -- Fondo secundario
+		gray3 = "#2d3038",        -- Fondo terciario
+		gray4 = "#363941",        -- Fondo elevado
+		gray5 = "#b0b3bd",        -- Gris azulado medio
+
+		-- Surface colors con toque lunar
+		surface0 = "#1c1e26",
+		surface1 = "#24262f",
+		surface2 = "#2d3038",
+
+		-- LSP highlighting
+		lsp_reference_bg = "#323540",
+
+		-- Foreground con tonos fríos luminosos
+		fg = "#e3e5eb",           -- Texto principal (blanco lunar)
+		black = "#1c1e26",
+		white = "#f2f4f8",        -- Blanco brillante con toque azul
+		fg_muted = "#b0b3bd",     -- Gris azulado
+		fg_placeholder = "#858896",
+		fg_disabled = "#6f7280",
+		accent = "#d4c8e8",       -- Accent lavanda luminoso
+
+		-- Base colors: Paleta MOONLIGHT única 🌙
+		-- Tonos pasteles fríos con 20% de luminosidad
+		red = "#f0b4bb",          -- Rosa perla suave
+		green = "#b8e6d5",        -- Verde menta glacial
+		yellow = "#f7e8c8",       -- Crema lunar
+		purple = "#d4c8e8",       -- Lavanda luminosa
+		magenta = "#e8d4e8",      -- Malva lunar
+		orange = "#f5d4c4",       -- Durazno suave
+		blue = "#c4d8ed",         -- Azul hielo pastel
+		cyan = "#c8e8e8",         -- Aqua glacial
+
+		-- Bright colors: Versiones con brillo lunar
+		bright_black = "#858896",
+		bright_red = "#ffc8cf",
+		bright_green = "#cef5e8",
+		bright_yellow = "#fffae0",
+		bright_magenta = "#f5e3f5",
+		bright_orange = "#ffe8d8",
+		bright_blue = "#d8e8ff",
+		bright_cyan = "#dff5f5",
+		bright_purple = "#e8dcf5",
+
+		selection = "#323540",
+
+		-- Diffs con tonos lunares
+		diff_add_bg = "#2d4038",
+		diff_change_bg = "#403c2d",
+		diff_delete_bg = "#402d32",
+		diff_text_bg = "#4a3f30",
+
+		-- ═══════════════════════════════════════════════════════
+		-- SINTAXIS CON COLORES MOONLIGHT
+		-- ═══════════════════════════════════════════════════════
+
+		-- === 1. COMENTARIOS ===
+		comment = "#858896",
+		comment_doc = "#a3a6b3",
+		predoc = "#a3a6b3",
+		predictive = "#858896",
+
+		-- === 2. KEYWORDS ===
+		keyword = "#f0b4bb",      -- Rosa perla
+
+		-- === 3. FUNCIONES Y CLASES ===
+		function_ = "#d4c8e8",    -- Lavanda luminosa
+		constructor = "#f7e8c8",  -- Crema lunar
+
+		-- === 4. VARIABLES ===
+		variable = "#e3e5eb",     -- Blanco lunar
+		variable_member = "#d4c8e8",
+		variable_parameter = "#f2f4f8",
+		variable_special = "#f5d4c4",  -- Durazno suave
+
+		-- === 5. CONSTANTES Y NÚMEROS ===
+		constant = "#ebd8c8",
+		number = "#ebd8c8",
+
+		-- === 6. TIPOS ===
+		type = "#c4d8ed",         -- Azul hielo
+		type_interface = "#c4d8ed",
+		type_super = "#d8e8ff",
+
+		-- === 7. STRINGS ===
+		string = "#f7e8c8",       -- Crema lunar
+		string_escape = "#f0b4bb",
+		string_regex = "#f0b4bb",
+		string_special = "#e8d4e8",
+		string_special_symbol = "#f0b4bb",
+
+		-- === 8. PROPIEDADES Y ENUMS ===
+		property = "#b8e6d5",     -- Verde menta glacial
+		enum = "#b8e6d5",
+
+		-- === 9. OPERADORES Y PUNTUACIÓN ===
+		operator = "#b0b3bd",
+		punctuation = "#a3a6b3",
+		bracket = "#c8e8e8",      -- Aqua glacial
+		delimiter = "#858896",
+
+		-- === 10. TAGS Y MARKUP ===
+		tag = "#f0b4bb",
+		title = "#e8d4e8",
+
+		-- === 11. ENLACES ===
+		link_text = "#c4d8ed",
+		link_uri = "#c4d8ed",
+
+		-- === 12. CÓDIGO ESPECIAL ===
+		embedded = "#e8d4e8",
+		embphasis = "#d4c8e8",
+		text_literal = "#b8e6d5",
+
+		-- === 13. UTILIDADES ===
+		hint = "#a3a6b3",
+		variant = "#e8d4e8",
+		primary = "#e3e5eb",
+
+		none = "NONE",
+	},
 }
 
 return function(variant)
