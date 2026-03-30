@@ -1,6 +1,6 @@
 local palettes = {
 	-- ═══════════════════════════════════════════════════════════════════
-	-- 🌸 PASTEL VARIANT - Colores más vivos (2 tonos arriba)
+	-- 🌸 PASTEL VARIANT - Colores suaves y relajantes
 	-- Paleta suave con tonos neutros y pasteles para una experiencia visual relajante
 	-- ═══════════════════════════════════════════════════════════════════
 	pastel = {
@@ -126,6 +126,137 @@ local palettes = {
 		hint = "#9b9ea8",
 		variant = "#eac9ea",
 		primary = "#e0e1e6",
+
+		none = "NONE",
+	},
+
+	-- ═══════════════════════════════════════════════════════════════════
+	-- 🔥 VIBRANT VARIANT - Colores 30% más saturados e intensos
+	-- Paleta vibrante con colores más fuertes para máximo contraste visual
+	-- ═══════════════════════════════════════════════════════════════════
+	vibrant = {
+		bg_dark = "none",
+		gray0 = "none",
+
+		-- Backgrounds con más profundidad
+		gray1 = "#1a1d23",        -- Fondo principal
+		gray2 = "#21242b",        -- Fondo secundario
+		gray3 = "#2a2d36",        -- Fondo terciario
+		gray4 = "#33363f",        -- Fondo elevado
+		gray5 = "#bfc2cc",        -- Gris medio (mucho más claro)
+
+		-- Surface colors
+		surface0 = "#1a1d23",
+		surface1 = "#21242b",
+		surface2 = "#2a2d36",
+
+		-- LSP highlighting
+		lsp_reference_bg = "#383b46",
+
+		-- Foreground más brillantes
+		fg = "#f5f6fa",           -- Texto principal (muy brillante)
+		black = "#1a1d23",
+		white = "#ffffff",        -- Blanco puro
+		fg_muted = "#bfc2cc",     -- Texto apagado (más visible)
+		fg_placeholder = "#9499a3",
+		fg_disabled = "#83868f",
+		accent = "#ffddcc",       -- Accent melocotón brillante
+
+		-- Base colors: Paleta VIBRANT 🔥 (+30% saturación)
+		red = "#ff8888",          -- Rojo coral vibrante
+		green = "#88ffa8",        -- Verde neón suave
+		yellow = "#ffee88",       -- Amarillo brillante
+		purple = "#dd99ff",       -- Púrpura intenso
+		magenta = "#ff99ff",      -- Magenta vibrante
+		orange = "#ffbb88",       -- Naranja intenso
+		blue = "#88ddff",         -- Azul cielo brillante
+		cyan = "#88ffff",         -- Cyan eléctrico
+
+		-- Bright colors: Versiones ultra vivas
+		bright_black = "#9499a3",
+		bright_red = "#ffaaaa",
+		bright_green = "#aaffcc",
+		bright_yellow = "#ffffbb",
+		bright_magenta = "#ffbbff",
+		bright_orange = "#ffddaa",
+		bright_blue = "#aaeeff",
+		bright_cyan = "#bbffff",
+		bright_purple = "#eeccff",
+
+		selection = "#383b46",
+
+		-- Diffs más contrastados
+		diff_add_bg = "#3a5045",
+		diff_change_bg = "#4f4535",
+		diff_delete_bg = "#4f3a40",
+		diff_text_bg = "#5d4a38",
+
+		-- ═══════════════════════════════════════════════════════
+		-- SINTAXIS CON COLORES VIBRANTES
+		-- ═══════════════════════════════════════════════════════
+
+		-- === 1. COMENTARIOS ===
+		comment = "#9499a3",
+		comment_doc = "#b5b8c2",
+		predoc = "#b5b8c2",
+		predictive = "#9499a3",
+
+		-- === 2. KEYWORDS ===
+		keyword = "#ff8888",      -- Rojo coral vibrante
+
+		-- === 3. FUNCIONES Y CLASES ===
+		function_ = "#dd99ff",    -- Púrpura intenso
+		constructor = "#ffee88",  -- Amarillo brillante
+
+		-- === 4. VARIABLES ===
+		variable = "#f5f6fa",     -- Blanco brillante
+		variable_member = "#dd99ff",
+		variable_parameter = "#ffffff",
+		variable_special = "#ffbb88",  -- Naranja intenso
+
+		-- === 5. CONSTANTES Y NÚMEROS ===
+		constant = "#ffddcc",
+		number = "#ffddcc",
+
+		-- === 6. TIPOS ===
+		type = "#88ddff",         -- Azul cielo brillante
+		type_interface = "#88ddff",
+		type_super = "#aaeeff",
+
+		-- === 7. STRINGS ===
+		string = "#ffee88",       -- Amarillo brillante
+		string_escape = "#ff8888",
+		string_regex = "#ff8888",
+		string_special = "#ff99ff",
+		string_special_symbol = "#ff8888",
+
+		-- === 8. PROPIEDADES Y ENUMS ===
+		property = "#88ffa8",     -- Verde neón suave
+		enum = "#88ffa8",
+
+		-- === 9. OPERADORES Y PUNTUACIÓN ===
+		operator = "#bfc2cc",
+		punctuation = "#b5b8c2",
+		bracket = "#88ffff",      -- Cyan eléctrico
+		delimiter = "#9499a3",
+
+		-- === 10. TAGS Y MARKUP ===
+		tag = "#ff8888",
+		title = "#ff99ff",
+
+		-- === 11. ENLACES ===
+		link_text = "#88ddff",
+		link_uri = "#88ddff",
+
+		-- === 12. CÓDIGO ESPECIAL ===
+		embedded = "#ff99ff",
+		embphasis = "#dd99ff",
+		text_literal = "#88ffa8",
+
+		-- === 13. UTILIDADES ===
+		hint = "#b5b8c2",
+		variant = "#ff99ff",
+		primary = "#f5f6fa",
 
 		none = "NONE",
 	},

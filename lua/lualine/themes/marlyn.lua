@@ -1,27 +1,54 @@
 -- ═══════════════════════════════════════════════════════════════════
--- 🌸 MARLYN LUALINE THEME - Pastel Variant (2 tonos arriba)
+-- 🌸 MARLYN LUALINE THEME - Multi-Variant Support
 -- ═══════════════════════════════════════════════════════════════════
 
-local colors = {
-	-- Base colors - Neutros suaves
-	bg = "#1a1d23",
-	fg = "#e0e1e6",
+local config = require("marlyn.config")
+local variant = config.variant or "pastel"
 
-	-- Paleta PASTEL más viva 🎨 (+2 tonos)
-	yellow = "#f5e5b9",   -- Amarillo crema más luminoso
-	red = "#e5a5a5",      -- Rosa pastel más vivo
-	green = "#b5daba",    -- Verde menta más brillante
-	purple = "#c9baeb",   -- Lavanda más saturada
-	orange = "#f5c9b2",   -- Melocotón más saturado
-	blue = "#aec8eb",     -- Azul cielo más brillante
-	cyan = "#b9e5e5",     -- Aguamarina más vivo
-	magenta = "#eac9ea",  -- Magenta pastel más vivo
+local palettes = {
+	pastel = {
+		-- Base colors - Neutros suaves
+		bg = "#1a1d23",
+		fg = "#e0e1e6",
 
-	-- Utility colors - Grises neutros
-	subtle = "#9b9ea8",
-	muted = "#7d8088",
-	overlay = "#2a2d36",
+		-- Paleta PASTEL 🌸
+		yellow = "#f5e5b9",   -- Amarillo crema más luminoso
+		red = "#e5a5a5",      -- Rosa pastel más vivo
+		green = "#b5daba",    -- Verde menta más brillante
+		purple = "#c9baeb",   -- Lavanda más saturada
+		orange = "#f5c9b2",   -- Melocotón más saturado
+		blue = "#aec8eb",     -- Azul cielo más brillante
+		cyan = "#b9e5e5",     -- Aguamarina más vivo
+		magenta = "#eac9ea",  -- Magenta pastel más vivo
+
+		-- Utility colors - Grises neutros
+		subtle = "#9b9ea8",
+		muted = "#7d8088",
+		overlay = "#2a2d36",
+	},
+	vibrant = {
+		-- Base colors - Fondos oscuros
+		bg = "#1a1d23",
+		fg = "#f5f6fa",
+
+		-- Paleta VIBRANT 🔥 (+30% saturación)
+		yellow = "#ffee88",   -- Amarillo brillante
+		red = "#ff8888",      -- Rojo coral vibrante
+		green = "#88ffa8",    -- Verde neón suave
+		purple = "#dd99ff",   -- Púrpura intenso
+		orange = "#ffbb88",   -- Naranja intenso
+		blue = "#88ddff",     -- Azul cielo brillante
+		cyan = "#88ffff",     -- Cyan eléctrico
+		magenta = "#ff99ff",  -- Magenta vibrante
+
+		-- Utility colors - Grises más claros
+		subtle = "#b5b8c2",
+		muted = "#9499a3",
+		overlay = "#2a2d36",
+	},
 }
+
+local colors = palettes[variant] or palettes.pastel
 
 return {
 	normal = {

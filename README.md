@@ -5,7 +5,7 @@ A beautifully balanced Neovim color scheme featuring a harmonious mix of muted a
 ## ✨ Features
 
 - 🎯 **Balanced Color Palette**: Perfect blend of muted and vibrant colors
-- 🎨 **Two Variants**: Choose between `marlyn` (vibrant) or `pastel` (soft & neutral)
+- 🎨 **Two Variants**: Choose between `pastel` (soft & neutral) or `vibrant` (intense & saturated)
 - 🌙 **Dark Background**: Easy on the eyes for long coding sessions
 - 🔌 **Extensive Plugin Support**: Integration with 20+ popular Neovim plugins
 - 🎨 **Terminal Support**: Configs for Alacritty, Kitty, iTerm2, Ghostty, and more
@@ -60,7 +60,7 @@ Default configuration:
 
 ```lua
 require("marlyn").setup({
-  variant = "marlyn", -- Theme variant: "marlyn" (default) or "pastel"
+  variant = "pastel", -- Theme variant: "pastel" (default) or "vibrant"
   terminal_colors = true, -- Configure terminal colors
   
   -- Customize syntax styles
@@ -134,7 +134,16 @@ vim.cmd("colorscheme marlyn")
 
 ```lua
 require("marlyn").setup({
-  variant = "pastel", -- Soft neutral and pastel colors
+  variant = "pastel", -- Soft neutral and pastel colors (default)
+})
+vim.cmd("colorscheme marlyn")
+```
+
+### Example: Use Vibrant Variant
+
+```lua
+require("marlyn").setup({
+  variant = "vibrant", -- Intense and saturated colors (+30% more vibrant)
 })
 vim.cmd("colorscheme marlyn")
 ```
@@ -202,61 +211,63 @@ require('lualine').setup {
 
 ## 🎨 Color Palette
 
-### Marlyn Variant (Default - Vibrant)
+### Pastel Variant (Default) 🌸
 
-### Base Colors
-| Color | Hex | Preview |
-|-------|-----|---------|
-| Red | `#E06C75` | ![](https://via.placeholder.com/50x20/E06C75/E06C75.png) |
-| Green | `#98C379` | ![](https://via.placeholder.com/50x20/98C379/98C379.png) |
-| Yellow | `#E5C07B` | ![](https://via.placeholder.com/50x20/E5C07B/E5C07B.png) |
-| Blue | `#61AFEF` | ![](https://via.placeholder.com/50x20/61AFEF/61AFEF.png) |
-| Purple | `#C678DD` | ![](https://via.placeholder.com/50x20/C678DD/C678DD.png) |
-| Cyan | `#56B6C2` | ![](https://via.placeholder.com/50x20/56B6C2/56B6C2.png) |
-| Orange | `#D19A66` | ![](https://via.placeholder.com/50x20/D19A66/D19A66.png) |
-| Magenta | `#C882E7` | ![](https://via.placeholder.com/50x20/C882E7/C882E7.png) |
-
-### Bright Colors
-| Color | Hex | Preview |
-|-------|-----|---------|
-| Bright Red | `#FF6B7F` | ![](https://via.placeholder.com/50x20/FF6B7F/FF6B7F.png) |
-| Bright Green | `#7FB069` | ![](https://via.placeholder.com/50x20/7FB069/7FB069.png) |
-| Bright Yellow | `#FFDA66` | ![](https://via.placeholder.com/50x20/FFDA66/FFDA66.png) |
-| Bright Blue | `#82D4FF` | ![](https://via.placeholder.com/50x20/82D4FF/82D4FF.png) |
-| Bright Purple | `#E89BF2` | ![](https://via.placeholder.com/50x20/E89BF2/E89BF2.png) |
-| Bright Cyan | `#6DDCFF` | ![](https://via.placeholder.com/50x20/6DDCFF/6DDCFF.png) |
-| Bright Orange | `#FFA047` | ![](https://via.placeholder.com/50x20/FFA047/FFA047.png) |
-| Bright Magenta | `#FF73D7` | ![](https://via.placeholder.com/50x20/FF73D7/FF73D7.png) |
-
----
-
-### Pastel Variant (Soft & Neutral) 🌸
-
-A soothing color palette with muted, desaturated tones perfect for long coding sessions.
+A soothing color palette with soft, desaturated tones perfect for long coding sessions.
 
 #### Base Colors
 | Color | Hex | Preview |
 |-------|-----|---------|
-| Red | `#d49090` | ![](https://via.placeholder.com/50x20/d49090/d49090.png) |
-| Green | `#a3c9a8` | ![](https://via.placeholder.com/50x20/a3c9a8/a3c9a8.png) |
-| Yellow | `#e4d4a7` | ![](https://via.placeholder.com/50x20/e4d4a7/e4d4a7.png) |
-| Blue | `#9db7d9` | ![](https://via.placeholder.com/50x20/9db7d9/9db7d9.png) |
-| Purple | `#b8a8d9` | ![](https://via.placeholder.com/50x20/b8a8d9/b8a8d9.png) |
-| Cyan | `#a8d4d4` | ![](https://via.placeholder.com/50x20/a8d4d4/a8d4d4.png) |
-| Orange | `#e4b8a0` | ![](https://via.placeholder.com/50x20/e4b8a0/e4b8a0.png) |
-| Magenta | `#d9b8d9` | ![](https://via.placeholder.com/50x20/d9b8d9/d9b8d9.png) |
+| Red | `#e5a5a5` | ![](https://via.placeholder.com/50x20/e5a5a5/e5a5a5.png) |
+| Green | `#b5daba` | ![](https://via.placeholder.com/50x20/b5daba/b5daba.png) |
+| Yellow | `#f5e5b9` | ![](https://via.placeholder.com/50x20/f5e5b9/f5e5b9.png) |
+| Blue | `#aec8eb` | ![](https://via.placeholder.com/50x20/aec8eb/aec8eb.png) |
+| Purple | `#c9baeb` | ![](https://via.placeholder.com/50x20/c9baeb/c9baeb.png) |
+| Cyan | `#b9e5e5` | ![](https://via.placeholder.com/50x20/b9e5e5/b9e5e5.png) |
+| Orange | `#f5c9b2` | ![](https://via.placeholder.com/50x20/f5c9b2/f5c9b2.png) |
+| Magenta | `#eac9ea` | ![](https://via.placeholder.com/50x20/eac9ea/eac9ea.png) |
 
 #### Bright Colors
 | Color | Hex | Preview |
 |-------|-----|---------|
-| Bright Red | `#e4a6a6` | ![](https://via.placeholder.com/50x20/e4a6a6/e4a6a6.png) |
-| Bright Green | `#b8d9bd` | ![](https://via.placeholder.com/50x20/b8d9bd/b8d9bd.png) |
-| Bright Yellow | `#f0e6be` | ![](https://via.placeholder.com/50x20/f0e6be/f0e6be.png) |
-| Bright Blue | `#b3caeb` | ![](https://via.placeholder.com/50x20/b3caeb/b3caeb.png) |
-| Bright Purple | `#cebdeb` | ![](https://via.placeholder.com/50x20/cebdeb/cebdeb.png) |
-| Bright Cyan | `#bde6e6` | ![](https://via.placeholder.com/50x20/bde6e6/bde6e6.png) |
-| Bright Orange | `#f0cbb8` | ![](https://via.placeholder.com/50x20/f0cbb8/f0cbb8.png) |
-| Bright Magenta | `#ebc8eb` | ![](https://via.placeholder.com/50x20/ebc8eb/ebc8eb.png) |
+| Bright Red | `#f5b7b7` | ![](https://via.placeholder.com/50x20/f5b7b7/f5b7b7.png) |
+| Bright Green | `#c9ebce` | ![](https://via.placeholder.com/50x20/c9ebce/c9ebce.png) |
+| Bright Yellow | `#fff7d0` | ![](https://via.placeholder.com/50x20/fff7d0/fff7d0.png) |
+| Bright Blue | `#c4dbfd` | ![](https://via.placeholder.com/50x20/c4dbfd/c4dbfd.png) |
+| Bright Purple | `#deccfd` | ![](https://via.placeholder.com/50x20/deccfd/deccfd.png) |
+| Bright Cyan | `#cff7f7` | ![](https://via.placeholder.com/50x20/cff7f7/cff7f7.png) |
+| Bright Orange | `#ffdcca` | ![](https://via.placeholder.com/50x20/ffdcca/ffdcca.png) |
+| Bright Magenta | `#fcdbfc` | ![](https://via.placeholder.com/50x20/fcdbfc/fcdbfc.png) |
+
+---
+
+### Vibrant Variant 🔥
+
+High contrast color palette with 30% more saturation for maximum visual impact.
+
+#### Base Colors
+| Color | Hex | Preview |
+|-------|-----|---------|
+| Red | `#ff8888` | ![](https://via.placeholder.com/50x20/ff8888/ff8888.png) |
+| Green | `#88ffa8` | ![](https://via.placeholder.com/50x20/88ffa8/88ffa8.png) |
+| Yellow | `#ffee88` | ![](https://via.placeholder.com/50x20/ffee88/ffee88.png) |
+| Blue | `#88ddff` | ![](https://via.placeholder.com/50x20/88ddff/88ddff.png) |
+| Purple | `#dd99ff` | ![](https://via.placeholder.com/50x20/dd99ff/dd99ff.png) |
+| Cyan | `#88ffff` | ![](https://via.placeholder.com/50x20/88ffff/88ffff.png) |
+| Orange | `#ffbb88` | ![](https://via.placeholder.com/50x20/ffbb88/ffbb88.png) |
+| Magenta | `#ff99ff` | ![](https://via.placeholder.com/50x20/ff99ff/ff99ff.png) |
+
+#### Bright Colors
+| Color | Hex | Preview |
+|-------|-----|---------|
+| Bright Red | `#ffaaaa` | ![](https://via.placeholder.com/50x20/ffaaaa/ffaaaa.png) |
+| Bright Green | `#aaffcc` | ![](https://via.placeholder.com/50x20/aaffcc/aaffcc.png) |
+| Bright Yellow | `#ffffbb` | ![](https://via.placeholder.com/50x20/ffffbb/ffffbb.png) |
+| Bright Blue | `#aaeeff` | ![](https://via.placeholder.com/50x20/aaeeff/aaeeff.png) |
+| Bright Purple | `#eeccff` | ![](https://via.placeholder.com/50x20/eeccff/eeccff.png) |
+| Bright Cyan | `#bbffff` | ![](https://via.placeholder.com/50x20/bbffff/bbffff.png) |
+| Bright Orange | `#ffddaa` | ![](https://via.placeholder.com/50x20/ffddaa/ffddaa.png) |
+| Bright Magenta | `#ffbbff` | ![](https://via.placeholder.com/50x20/ffbbff/ffbbff.png) |
 
 ## 🤝 Contributing
 
