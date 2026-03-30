@@ -36,12 +36,9 @@
 <img width="1916" alt="image" src="https://github.com/user-attachments/assets/e242a309-cefe-46d5-abc1-2651adb796d0" />
 
 ---
-<<<<<<< HEAD
-=======
 
 ## 📄 License
 
 MIT License
 
 Copyright (c) 2026 Marlyn Theme
->>>>>>> d88627b (docs: add inspiration, variant previews and MIT license)
