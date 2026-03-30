@@ -1,133 +1,6 @@
 local palettes = {
-	marlyn = {
-		bg_dark = "none",
-		gray0 = "none",
-
-		-- Dark backgrounds
-		gray1 = "#191724",
-		gray2 = "#1f1d2e",
-		gray3 = "#26233a",
-		gray4 = "#2a273f",
-		gray5 = "#6e6a86",
-
-		-- Surface colors for subtle backgrounds
-		surface0 = "#191724",
-		surface1 = "#1f1d2e",
-		surface2 = "#26233a",
-
-		-- LSP highlighting
-		lsp_reference_bg = "#2a283e",
-
-		-- Foreground colors
-		fg = "#e0def4",
-		black = "#191724",
-		white = "#e0def4",
-		fg_muted = "#6e6a86",
-		fg_placeholder = "#908caa",
-		fg_disabled = "#6e6a86",
-		accent = "#E4BA00", -- Yellow accent
-
-		-- Base colors: Custom vibrant palette
-		red = "#A71D31",
-		green = "#237161",
-		yellow = "#E4BA00",
-		purple = "#7B3C90",
-		magenta = "#c4a7e7",
-		orange = "#FC9F5B",
-		blue = "#0f5187",
-		cyan = "#9ccfd8",
-
-		-- Bright colors: versiones más vibrantes
-		bright_black = "#6e6a86",
-		bright_red = "#D4284A",
-		bright_green = "#2D9B7F",
-		bright_yellow = "#FFD633",
-		bright_purple = "#9B4DB8",
-		bright_magenta = "#D4BFEF",
-		bright_orange = "#FFB380",
-		bright_blue = "#1A6BB3",
-		bright_cyan = "#B8E6EE",
-
-		selection = "#2a283e",
-
-		-- Colores difuminados para diffs
-		diff_add_bg = "#1a2820",
-		diff_change_bg = "#2a2416",
-		diff_delete_bg = "#2a1a1d",
-		diff_text_bg = "#32281a",
-
-		-- ═══════════════════════════════════════════════════════
-		-- SINTAXIS ORDENADA POR CATEGORÍAS
-		-- ═══════════════════════════════════════════════════════
-
-		-- === 1. COMENTARIOS ===
-		comment = "#6e6a86", -- Comentarios: //, #, /* */
-		comment_doc = "#908caa", -- Documentación: /** */, """ """
-		predoc = "#908caa", -- Pre-documentación
-		predictive = "#6e6a86", -- Texto predictivo
-
-		-- === 2. KEYWORDS (Palabras clave) ===
-		keyword = "#e95f69", -- let, const, if, for, return, import, export
-
-		-- === 3. FUNCIONES Y CLASES ===
-		function_ = "#c0b7f9", -- function foo(), const bar = () => {}
-		constructor = "#FFE893", -- class MyClass, new MyClass()
-
-		-- === 4. VARIABLES ===
-		variable = "#e0def4", -- let x, const y (variables normales)
-		variable_member = "#c0b7f9", -- obj.member (miembros de objetos)
-		variable_parameter = "#FFFFFF", -- function(param1, param2)
-		variable_special = "#ea9030", -- this, self, super
-
-		-- === 5. CONSTANTES Y NÚMEROS ===
-		constant = "#E4C5AF", -- const API_KEY = "..."
-		number = "#E4C5AF", -- 42, 3.14, 0xFF
-
-		-- === 6. TIPOS ===
-		type = "#53B3CB", -- string, number, boolean, MyType
-		type_interface = "#53B3CB", -- interface User {}
-		type_super = "#53B3CB", -- Super tipos
-
-		-- === 7. STRINGS (Cadenas) ===
-		string = "#EFCB68", -- "texto", 'texto', `template`
-		string_escape = "#A71D31", -- \n, \t, \"
-		string_regex = "#A71D31", -- /[a-z]+/g
-		string_special = "#c4a7e7", -- Interpolación: ${var}
-		string_special_symbol = "#A71D31", -- Símbolos especiales
-
-		-- === 8. PROPIEDADES Y ENUMS ===
-		property = "#b3ffa0", -- obj.property, user.name
-		enum = "#237161", -- enum Status { Active }
-
-		-- === 9. OPERADORES Y PUNTUACIÓN ===
-		operator = "#908caa", -- +, -, *, /, =, ==, &&, ||
-		punctuation = "#908caa", -- ; , . :
-		bracket = "#9ccfd8", -- [] () {}
-		delimiter = "#6e6a86", -- Delimitadores
-
-		-- === 10. TAGS Y MARKUP ===
-		tag = "#A71D31", -- <div>, <Component>
-		title = "#c4a7e7", -- # Título en markdown
-
-		-- === 11. ENLACES ===
-		link_text = "#0f5187", -- [texto](url)
-		link_uri = "#0f5187", -- https://example.com
-
-		-- === 12. CÓDIGO ESPECIAL ===
-		embedded = "#c4a7e7", -- Código embebido
-		embphasis = "#0f5187", -- Énfasis
-		text_literal = "#237161", -- Literales
-
-		-- === 13. UTILIDADES ===
-		hint = "#9AA6B2", -- Hints del LSP
-		variant = "#c4a7e7", -- Variantes
-		primary = "#e0def4", -- Color primario
-
-		none = "NONE",
-	},
-	
 	-- ═══════════════════════════════════════════════════════════════════
-	-- 🌸 PASTEL & NEUTRAL VARIANT
+	-- 🌸 PASTEL VARIANT - Colores más vivos (2 tonos arriba)
 	-- Paleta suave con tonos neutros y pasteles para una experiencia visual relajante
 	-- ═══════════════════════════════════════════════════════════════════
 	pastel = {
@@ -139,7 +12,7 @@ local palettes = {
 		gray2 = "#21242b",        -- Fondo secundario
 		gray3 = "#2a2d36",        -- Fondo terciario
 		gray4 = "#33363f",        -- Fondo elevado
-		gray5 = "#9699a3",        -- Gris medio
+		gray5 = "#a8abb5",        -- Gris medio (más claro)
 
 		-- Surface colors sutiles
 		surface0 = "#1a1d23",
@@ -150,114 +23,114 @@ local palettes = {
 		lsp_reference_bg = "#2e313a",
 
 		-- Foreground neutros
-		fg = "#d4d5db",           -- Texto principal (gris muy claro)
+		fg = "#e0e1e6",           -- Texto principal (más claro)
 		black = "#1a1d23",
-		white = "#e8e9ed",
-		fg_muted = "#9699a3",     -- Texto apagado
-		fg_placeholder = "#6b6e78",
-		fg_disabled = "#5a5d67",
-		accent = "#d8b4a0",       -- Accent beige/rosa
+		white = "#f0f1f5",        -- Blanco más brillante
+		fg_muted = "#a8abb5",     -- Texto apagado (más visible)
+		fg_placeholder = "#7d8088",
+		fg_disabled = "#6c6f79",
+		accent = "#ecc6b2",       -- Accent beige/rosa (más saturado)
 
-		-- Base colors: Paleta PASTEL suave 🎨
-		red = "#d49090",          -- Rosa pastel suave
-		green = "#a3c9a8",        -- Verde menta pastel
-		yellow = "#e4d4a7",       -- Amarillo crema
-		purple = "#b8a8d9",       -- Lavanda suave
-		magenta = "#d9b8d9",      -- Magenta pastel
-		orange = "#e4b8a0",       -- Melocotón suave
-		blue = "#9db7d9",         -- Azul cielo pastel
-		cyan = "#a8d4d4",         -- Cyan aguamarina
+		-- Base colors: Paleta PASTEL más viva 🎨 (+2 tonos)
+		red = "#e5a5a5",          -- Rosa pastel más vivo
+		green = "#b5daba",        -- Verde menta más brillante
+		yellow = "#f5e5b9",       -- Amarillo crema más luminoso
+		purple = "#c9baeb",       -- Lavanda más saturada
+		magenta = "#eac9ea",      -- Magenta pastel más vivo
+		orange = "#f5c9b2",       -- Melocotón más saturado
+		blue = "#aec8eb",         -- Azul cielo más brillante
+		cyan = "#b9e5e5",         -- Cyan aguamarina más vivo
 
-		-- Bright colors: Versiones ligeramente más vivas (pero aún pasteles)
-		bright_black = "#6b6e78",
-		bright_red = "#e4a6a6",
-		bright_green = "#b8d9bd",
-		bright_yellow = "#f0e6be",
-		bright_purple = "#cebdeb",
-		bright_magenta = "#ebc8eb",
-		bright_orange = "#f0cbb8",
-		bright_blue = "#b3caeb",
-		bright_cyan = "#bde6e6",
+		-- Bright colors: Versiones aún más vivas
+		bright_black = "#7d8088",
+		bright_red = "#f5b7b7",
+		bright_green = "#c9ebce",
+		bright_yellow = "#fff7d0",
+		bright_magenta = "#fcdbfc",
+		bright_orange = "#ffdcca",
+		bright_blue = "#c4dbfd",
+		bright_cyan = "#cff7f7",
+		bright_purple = "#deccfd",
 
 		selection = "#2e313a",
 
 		-- Diffs suaves
-		diff_add_bg = "#263228",
-		diff_change_bg = "#332d20",
-		diff_delete_bg = "#332227",
-		diff_text_bg = "#3d3327",
+		diff_add_bg = "#2e3f35",
+		diff_change_bg = "#3f3828",
+		diff_delete_bg = "#3f2e32",
+		diff_text_bg = "#4d3e2e",
 
 		-- ═══════════════════════════════════════════════════════
-		-- SINTAXIS CON COLORES PASTELES
+		-- SINTAXIS CON COLORES PASTELES MÁS VIVOS
 		-- ═══════════════════════════════════════════════════════
 
 		-- === 1. COMENTARIOS ===
-		comment = "#6b6e78",
-		comment_doc = "#8a8d97",
-		predoc = "#8a8d97",
-		predictive = "#6b6e78",
+		comment = "#7d8088",
+		comment_doc = "#9b9ea8",
+		predoc = "#9b9ea8",
+		predictive = "#7d8088",
 
 		-- === 2. KEYWORDS ===
-		keyword = "#d49090",      -- Rosa pastel para keywords
+		keyword = "#e5a5a5",      -- Rosa pastel más vivo
 
 		-- === 3. FUNCIONES Y CLASES ===
-		function_ = "#b8a8d9",    -- Lavanda para funciones
-		constructor = "#e4d4a7",  -- Amarillo crema para constructores
+		function_ = "#c9baeb",    -- Lavanda más saturada
+		constructor = "#f5e5b9",  -- Amarillo crema más luminoso
 
 		-- === 4. VARIABLES ===
-		variable = "#d4d5db",     -- Gris claro neutral
-		variable_member = "#b8a8d9",
-		variable_parameter = "#e8e9ed",
-		variable_special = "#e4b8a0",  -- Melocotón para this/self
+		variable = "#e0e1e6",     -- Gris claro neutral (más brillante)
+		variable_member = "#c9baeb",
+		variable_parameter = "#f0f1f5",
+		variable_special = "#f5c9b2",  -- Melocotón más saturado
 
 		-- === 5. CONSTANTES Y NÚMEROS ===
-		constant = "#d8c4b0",
-		number = "#d8c4b0",
+		constant = "#e9d5c2",
+		number = "#e9d5c2",
 
 		-- === 6. TIPOS ===
-		type = "#9db7d9",         -- Azul cielo pastel
-		type_interface = "#9db7d9",
-		type_super = "#b3caeb",
+		type = "#aec8eb",         -- Azul cielo más brillante
+		type_interface = "#aec8eb",
+		type_super = "#c4dbfd",
 
 		-- === 7. STRINGS ===
-		string = "#e4d4a7",       -- Amarillo crema
-		string_escape = "#d49090",
-		string_regex = "#d49090",
-		string_special = "#d9b8d9",
-		string_special_symbol = "#d49090",
+		string = "#f5e5b9",       -- Amarillo crema más luminoso
+		string_escape = "#e5a5a5",
+		string_regex = "#e5a5a5",
+		string_special = "#eac9ea",
+		string_special_symbol = "#e5a5a5",
 
 		-- === 8. PROPIEDADES Y ENUMS ===
-		property = "#a3c9a8",     -- Verde menta
-		enum = "#a3c9a8",
+		property = "#b5daba",     -- Verde menta más brillante
+		enum = "#b5daba",
 
 		-- === 9. OPERADORES Y PUNTUACIÓN ===
-		operator = "#9699a3",
-		punctuation = "#8a8d97",
-		bracket = "#a8d4d4",      -- Cyan aguamarina
-		delimiter = "#6b6e78",
+		operator = "#a8abb5",
+		punctuation = "#9b9ea8",
+		bracket = "#b9e5e5",      -- Cyan aguamarina más vivo
+		delimiter = "#7d8088",
 
 		-- === 10. TAGS Y MARKUP ===
-		tag = "#d49090",
-		title = "#d9b8d9",
+		tag = "#e5a5a5",
+		title = "#eac9ea",
 
 		-- === 11. ENLACES ===
-		link_text = "#9db7d9",
-		link_uri = "#9db7d9",
+		link_text = "#aec8eb",
+		link_uri = "#aec8eb",
 
 		-- === 12. CÓDIGO ESPECIAL ===
-		embedded = "#d9b8d9",
-		embphasis = "#b8a8d9",
-		text_literal = "#a3c9a8",
+		embedded = "#eac9ea",
+		embphasis = "#c9baeb",
+		text_literal = "#b5daba",
 
 		-- === 13. UTILIDADES ===
-		hint = "#8a8d97",
-		variant = "#d9b8d9",
-		primary = "#d4d5db",
+		hint = "#9b9ea8",
+		variant = "#eac9ea",
+		primary = "#e0e1e6",
 
 		none = "NONE",
 	},
 }
 
 return function(variant)
-	return palettes[variant] or palettes.marlyn
+	return palettes[variant] or palettes.pastel
 end
