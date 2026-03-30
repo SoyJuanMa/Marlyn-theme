@@ -1,0 +1,629 @@
+═══════════════════════════════════════════════════════════════════════════════
+                    MARLYN THEME - GUÍA DE COLORES
+                    Rose Pine + Mango Accent
+═══════════════════════════════════════════════════════════════════════════════
+
+📍 UBICACIÓN: lua/marlyn/variant.lua
+
+Esta guía te explica QUÉ CAMBIA cuando modificás cada color en la paleta.
+
+═══════════════════════════════════════════════════════════════════════════════
+                         🎨 COLORES BASE
+═══════════════════════════════════════════════════════════════════════════════
+
+red = "#eb6f92"
+  → Cambia: Tags HTML/JSX (<div>, <button>)
+  → Cambia: String escapes (\n, \t)
+  → Cambia: String special symbols
+  → Ejemplo: <div>, "\n", special chars
+
+green = "#9ccfd8"  
+  → Cambia: Propiedades de objetos (obj.propiedad)
+  → Cambia: Enums
+  → Cambia: Type interfaces
+  → Cambia: Variable members
+  → Cambia: Hints
+  → Ejemplo: user.name, enum Colors, interface Props
+
+yellow = "#f6c177" ⭐⭐⭐ (MANGO - COLOR PRINCIPAL)
+  → Cambia: KEYWORDS (let, const, var, if, else, for, while, return)
+  → Cambia: FUNCIONES (function, def, func)
+  → Cambia: CLASES (class, constructores)
+  → Cambia: CONSTANTES (const CONSTANTE = valor)
+  → Cambia: TIPOS (string, number, boolean, type, interface)
+  → Cambia: STRINGS ("texto", 'texto', `template`)
+  → Cambia: ACCENT para UI (cursor line number, búsquedas)
+  → Ejemplo: function foo() { let x = "hola"; class MyClass {}; }
+
+purple = "#c4a7e7"
+  → Cambia: Variables especiales (this, self)
+  → Cambia: Embedded code
+  → Cambia: Títulos en markdown
+  → Cambia: String special
+  → Cambia: Variant
+  → Ejemplo: ${variable}, this, self, # Título
+
+magenta = "#c4a7e7"
+  → Mismo que purple en esta paleta (Rose Pine iris)
+
+orange = "#ea9a97"
+  → Cambia: NÚMEROS (1, 2, 3, 3.14, 0xFF)
+  → Cambia: PARÁMETROS de funciones
+  → Cambia: Text literals
+  → Cambia: String regex
+  → Ejemplo: 42, function(param1, param2), /regex/
+
+blue = "#31748f"
+  → Cambia: Enlaces/URLs
+  → Cambia: Emphasis
+  → Ejemplo: https://example.com, [link](url)
+
+cyan = "#9ccfd8"
+  → Mismo que green (Rose Pine foam)
+  → Propiedades, enums, hints
+
+═══════════════════════════════════════════════════════════════════════════════
+                      🌟 COLORES BRILLANTES (BRIGHT)
+═══════════════════════════════════════════════════════════════════════════════
+
+bright_black = "#6e6a86"
+  → Igual que gray5 y fg_muted
+  → Comentarios, texto muted
+
+bright_red = "#eb6f92"
+  → Mismo que red (Rose Pine love)
+
+bright_green = "#9ccfd8"
+  → Mismo que green/cyan (Rose Pine foam)
+
+bright_yellow = "#f6c177" ⭐
+  → Mismo que yellow (Mango)
+
+bright_purple = "#c4a7e7"
+  → Mismo que purple (Rose Pine iris)
+
+bright_magenta = "#c4a7e7"
+  → Mismo que purple (Rose Pine iris)
+
+bright_orange = "#ea9a97"
+  → Mismo que orange (Rose Pine rose variant)
+
+bright_blue = "#31748f"
+  → Mismo que blue (Rose Pine pine)
+
+bright_cyan = "#9ccfd8"
+  → Mismo que cyan (Rose Pine foam)
+
+═══════════════════════════════════════════════════════════════════════════════
+                      🖼️ COLORES DE FONDO (Rose Pine)
+═══════════════════════════════════════════════════════════════════════════════
+
+bg_dark = "none"
+  → Fondo principal (transparente/heredado del terminal)
+  → Cambia: Todo el fondo del editor
+
+gray0 = "none"
+  → Fondo de ventanas flotantes (transparente)
+  → Cambia: Popups, menús
+
+gray1 = "#191724" (Rose Pine base)
+  → Fondo de línea actual (CursorLine)
+  → Cambia: La línea donde está el cursor
+  → Cambia: ColorColumn
+
+gray2 = "#1f1d2e" (Rose Pine surface)
+  → Separadores de ventanas
+  → Cambia: Divisores verticales/horizontales (VertSplit, WinSeparator)
+
+gray3 = "#26233a" (Rose Pine overlay)
+  → Elementos secundarios
+  → Cambia: ModeMsg, algunos backgrounds
+
+gray4 = "#2a273f" (Rose Pine muted variant)
+  → Elementos terciarios
+  → Cambia: Folded text
+
+gray5 = "#6e6a86" (Rose Pine muted)
+  → Números de línea (LineNr)
+  → Cambia: Los números a la izquierda
+  → Cambia: Delimiters
+
+surface0 = "#191724"
+  → Rose Pine base
+  → Backgrounds sutiles
+
+surface1 = "#1f1d2e"
+  → Rose Pine surface
+  → Selecciones visuales, highlights
+
+surface2 = "#26233a"
+  → Rose Pine overlay
+  → Elementos UI más destacados
+
+lsp_reference_bg = "#2a283e"
+  → Fondo cuando el LSP resalta referencias
+  → Cambia: Background de variables/funciones destacadas por LSP
+
+selection = "#2a283e"
+  → Color de selección visual (modo V)
+  → Cambia: Texto seleccionado
+  → Cambia: MatchParen background
+
+═══════════════════════════════════════════════════════════════════════════════
+                      📝 COLORES DE TEXTO GENERAL (Rose Pine)
+═══════════════════════════════════════════════════════════════════════════════
+
+fg = "#e0def4" (Rose Pine text)
+  → Color principal del texto
+  → Cambia: TODO el texto normal
+  → Cambia: Variables normales
+  → Cambia: Primary color
+
+black = "#191724" (Rose Pine base)
+  → Negro de fondo
+
+white = "#e0def4" (Rose Pine text)
+  → Blanco (igual que fg)
+
+fg_muted = "#6e6a86" (Rose Pine muted)
+  → Texto apagado/secundario
+  → Cambia: SignColumn, FoldColumn, NonText
+  → Cambia: StatusLine inactive
+
+fg_placeholder = "#908caa" (Rose Pine subtle)
+  → Placeholders en inputs
+  → Cambia: Texto temporal/placeholder
+
+fg_disabled = "#6e6a86" (Rose Pine muted)
+  → Texto deshabilitado
+  → Mismo que fg_muted
+
+accent = "#f6c177" ⭐⭐⭐ (MANGO)
+  → Color de acento principal
+  → Cambia: Número de línea actual (CursorLineNr)
+  → Cambia: IncSearch, CurSearch
+  → Cambia: Elementos UI importantes
+
+═══════════════════════════════════════════════════════════════════════════════
+                      🔍 COLORES DE SINTAXIS ESPECÍFICOS
+═══════════════════════════════════════════════════════════════════════════════
+
+comment = "#6e6a86" (Rose Pine muted)
+  → Cambia: Comentarios de línea // /* */ #
+  → Cambia: Predictive text
+  → Ejemplo: // comentario
+
+comment_doc = "#908caa" (Rose Pine subtle)
+  → Cambia: Comentarios de documentación /** */ """ """
+  → Cambia: Predoc
+  → Ejemplo: /** JSDoc */, """ docstring """
+
+constant = "#f6c177" ⭐ (MANGO)
+  → Cambia: const CONSTANTE = valor
+  → Ejemplo: const API_KEY = "..."
+
+constructor = "#f6c177" ⭐ (MANGO)
+  → Cambia: Nombres de clases
+  → Cambia: Constructores
+  → Ejemplo: new MyClass(), class MyClass {}
+
+function_ = "#f6c177" ⭐ (MANGO)
+  → Cambia: Nombres de todas las funciones
+  → Ejemplo: function foo(), const bar = () => {}, def my_func():
+
+keyword = "#f6c177" ⭐⭐⭐ (MANGO - MUY IMPORTANTE)
+  → Cambia: let, const, var, function, class, if, else, for, while,
+            return, import, export, from, async, await, try, catch,
+            new, this, super, extends, implements, etc.
+  → Este es el color MÁS VISIBLE del tema
+
+operator = "#908caa" (Rose Pine subtle)
+  → Cambia: +, -, *, /, =, ==, ===, &&, ||, !, <, >, etc.
+  → Cambia: Punctuation (. , ; :)
+
+property = "#9ccfd8" (Rose Pine foam)
+  → Cambia: Propiedades de objetos
+  → Ejemplo: user.name, obj.method, config.value
+
+string = "#f6c177" ⭐ (MANGO)
+  → Cambia: "strings", 'strings', `template strings`
+  → Este color hace que los strings DESTAQUEN como los keywords
+
+string_escape = "#eb6f92" (Rose Pine love)
+  → Cambia: Escapes dentro de strings
+  → Ejemplo: "hello\nworld" (\n es escape)
+
+string_regex = "#ea9a97" (Rose Pine rose variant)
+  → Cambia: Expresiones regulares
+  → Ejemplo: /[a-z]+/g
+
+string_special = "#c4a7e7" (Rose Pine iris)
+  → Cambia: Strings especiales (formato, interpolación)
+  → Ejemplo: f"valor: {x}" en Python
+
+string_special_symbol = "#eb6f92" (Rose Pine love)
+  → Cambia: Símbolos especiales en strings
+  → Ejemplo: #{variable} en Ruby
+
+number = "#ea9a97" (Rose Pine rose variant)
+  → Cambia: 1, 2, 3, 42, 3.14, 0xFF, 0b1010
+
+type = "#f6c177" ⭐ (MANGO)
+  → Cambia: Tipos en TypeScript/otros
+  → Cambia: type_super
+  → Ejemplo: string, number, MyType, interface
+
+type_interface = "#9ccfd8" (Rose Pine foam)
+  → Cambia: Interfaces específicas
+  → Ejemplo: interface User {}
+
+variable = "#e0def4" (Rose Pine text)
+  → Cambia: Variables normales
+  → Ejemplo: let myVar = 10 (myVar es variable)
+
+variable_member = "#9ccfd8" (Rose Pine foam)
+  → Cambia: Miembros de variables/objetos
+  → Ejemplo: obj.member (member es variable_member)
+
+variable_parameter = "#ea9a97" (Rose Pine rose variant)
+  → Cambia: Parámetros de funciones
+  → Ejemplo: function foo(param1, param2) {}
+
+variable_special = "#c4a7e7" (Rose Pine iris)
+  → Cambia: Variables especiales (this, self, super)
+
+punctuation = "#908caa" (Rose Pine subtle)
+  → Cambia: Puntuación general ; , . :
+
+bracket = "#908caa" (Rose Pine subtle)
+  → Cambia: Brackets y paréntesis () [] {}
+
+delimiter = "#6e6a86" (Rose Pine muted)
+  → Cambia: Delimitadores , ; : (más sutiles que punctuation)
+
+embedded = "#c4a7e7" (Rose Pine iris)
+  → Cambia: Código embebido (JSX en JS, etc)
+
+embphasis = "#31748f" (Rose Pine pine)
+  → Cambia: Texto con énfasis
+
+enum = "#9ccfd8" (Rose Pine foam)
+  → Cambia: Enumeraciones
+  → Ejemplo: enum Status { Active, Inactive }
+
+hint = "#9ccfd8" (Rose Pine foam)
+  → Cambia: Hints del LSP
+
+link_text = "#31748f" (Rose Pine pine)
+link_uri = "#31748f" (Rose Pine pine)
+  → Cambia: Enlaces en markdown
+  → Ejemplo: [texto](https://url.com)
+
+predoc = "#908caa" (Rose Pine subtle)
+  → Cambia: Pre-documentación
+
+predictive = "#6e6a86" (Rose Pine muted)
+  → Cambia: Texto predictivo
+
+primary = "#e0def4" (Rose Pine text)
+  → Color primario (igual que fg)
+
+tag = "#eb6f92" (Rose Pine love)
+  → Cambia: Tags HTML/JSX
+  → Ejemplo: <div>, <Component>
+
+text_literal = "#ea9a97" (Rose Pine rose variant)
+  → Cambia: Texto literal
+
+title = "#c4a7e7" (Rose Pine iris)
+  → Cambia: Títulos (markdown, etc)
+  → Ejemplo: # Título, ## Subtítulo
+
+variant = "#c4a7e7" (Rose Pine iris)
+  → Cambia: Variantes
+
+═══════════════════════════════════════════════════════════════════════════════
+                      🎨 COLORES DIFF (GIT)
+═══════════════════════════════════════════════════════════════════════════════
+
+diff_add_bg = "#1e2b26"
+  → Fondo de líneas AGREGADAS en git diff
+  → Cambia: + líneas verdes en diff
+  → Verde oscuro sutil
+
+diff_change_bg = "#2a2433"
+  → Fondo de líneas MODIFICADAS
+  → Cambia: ~ líneas modificadas en diff
+  → Púrpura oscuro sutil
+
+diff_delete_bg = "#2d2433"
+  → Fondo de líneas ELIMINADAS
+  → Cambia: - líneas rojas en diff
+  → Rojo oscuro sutil
+
+diff_text_bg = "#322e42"
+  → Fondo de texto modificado dentro de línea
+  → Resalta el cambio específico dentro de la línea
+  → Púrpura más visible
+
+═══════════════════════════════════════════════════════════════════════════════
+                      💡 FILOSOFÍA DEL TEMA
+═══════════════════════════════════════════════════════════════════════════════
+
+El tema Marlyn está diseñado con una filosofía clara:
+
+🥭 MANGO (#f6c177) - Lo que IMPORTA debe BRILLAR
+  • Keywords (let, const, if, for, class, function)
+  • Nombres de funciones
+  • Nombres de clases/constructores
+  • Tipos
+  • Strings
+  • Constantes
+
+  → El código ESTRUCTURAL es amarillo mango y SALTA a la vista
+
+🌹 ROSE PINE - El resto es ZEN
+  • Variables: Text suave (#e0def4)
+  • Propiedades: Foam cyan (#9ccfd8)
+  • Números: Rose variant (#ea9a97)
+  • Comentarios: Muted (#6e6a86)
+  • Operadores: Subtle (#908caa)
+  • Fondos: Base oscuro (#191724)
+
+  → Todo lo demás es suave, elegante, no distrae
+
+RESULTADO: Cuando mirás código, tu ojo va DIRECTO a las funciones, clases,
+           keywords y strings. El resto fluye naturalmente.
+
+═══════════════════════════════════════════════════════════════════════════════
+                      🔥 COLORES MÁS IMPORTANTES
+═══════════════════════════════════════════════════════════════════════════════
+
+Si querés personalizar el tema, modificá estos EN ESTE ORDEN:
+
+1. keyword = "#f6c177" ⭐⭐⭐
+   → EL color más importante del tema
+   → let, const, function, class, if, for, return, etc.
+   → Este es el que hace que el código "explote"
+
+2. function_ = "#f6c177" ⭐⭐⭐
+   → Nombres de funciones
+   → Mantenerlo igual que keyword crea consistencia visual
+
+3. string = "#f6c177" ⭐⭐
+   → Los strings
+   → Si querés que sean diferentes de keywords, cambiá este
+   → Ej: "#9ccfd8" (foam) para strings más sutiles
+
+4. type = "#f6c177" ⭐⭐
+   → Tipos (TypeScript, etc)
+   → Mantenerlo igual que keyword es consistente
+
+5. accent = "#f6c177" ⭐⭐
+   → UI accent (cursor line number, búsquedas)
+   → Debería matchear con keyword para consistencia
+
+6. fg = "#e0def4" ⭐
+   → Color principal del texto
+   → Cambia TODO el texto normal y variables
+
+7. comment = "#6e6a86" ⭐
+   → Comentarios
+   → Más claro = más visibles
+   → Más oscuro = menos distracción
+
+8. property = "#9ccfd8" ⭐
+   → Propiedades de objetos
+   → El segundo color más usado después de mango
+
+═══════════════════════════════════════════════════════════════════════════════
+                      🎯 EJEMPLOS DE CÓDIGO Y QUÉ COLOR USA
+═══════════════════════════════════════════════════════════════════════════════
+
+JavaScript/TypeScript:
+──────────────────────
+const myFunc = (param1, param2) => {
+│     │      │  │                 │
+│     │      │  │                 └─ bracket (#908caa) - subtle
+│     │      │  └─ variable_parameter (#ea9a97) - rose
+│     │      └─ operator (#908caa) - subtle
+│     └─ function_ (#f6c177) ⭐ - MANGO
+└─ keyword (#f6c177) ⭐ - MANGO
+
+  return "hello world"
+  │      │
+  │      └─ string (#f6c177) ⭐ - MANGO
+  └─ keyword (#f6c177) ⭐ - MANGO
+}
+
+class MyClass {
+│     │
+│     └─ constructor (#f6c177) ⭐ - MANGO
+└─ keyword (#f6c177) ⭐ - MANGO
+
+  constructor(value) {
+  │           │
+  │           └─ variable_parameter (#ea9a97) - rose
+  └─ constructor (#f6c177) ⭐ - MANGO
+
+    this.value = value
+    │    │      │ │
+    │    │      │ └─ variable_parameter (#ea9a97) - rose
+    │    │      └─ operator (#908caa) - subtle
+    │    └─ property (#9ccfd8) - foam
+    └─ variable_special (#c4a7e7) - iris
+  }
+}
+
+const user = { name: "John", age: 30 }
+│     │    │  │     │       │    │
+│     │    │  │     │       │    └─ number (#ea9a97) - rose
+│     │    │  │     │       └─ property (#9ccfd8) - foam
+│     │    │  │     └─ string (#f6c177) ⭐ - MANGO
+│     │    │  └─ property (#9ccfd8) - foam
+│     │    └─ bracket (#908caa) - subtle
+│     └─ variable (#e0def4) - text
+└─ keyword (#f6c177) ⭐ - MANGO
+
+HTML/JSX:
+─────────
+<div className="container">
+│    │         │
+│    │         └─ string (#f6c177) ⭐ - MANGO
+│    └─ property (#9ccfd8) - foam
+└─ tag (#eb6f92) - love
+
+  {user.name}
+   │    │
+   │    └─ property (#9ccfd8) - foam
+   └─ variable (#e0def4) - text
+</div>
+└─ tag (#eb6f92) - love
+
+Python:
+───────
+def my_function(param):
+│   │           │
+│   │           └─ variable_parameter (#ea9a97) - rose
+│   └─ function_ (#f6c177) ⭐ - MANGO
+└─ keyword (#f6c177) ⭐ - MANGO
+
+    # This is a comment
+    └─ comment (#6e6a86) - muted
+
+    return param * 2
+    │      │     │ │
+    │      │     │ └─ number (#ea9a97) - rose
+    │      │     └─ operator (#908caa) - subtle
+    │      └─ variable_parameter (#ea9a97) - rose
+    └─ keyword (#f6c177) ⭐ - MANGO
+
+TypeScript:
+───────────
+interface User {
+│         │
+│         └─ type_interface (#9ccfd8) - foam
+└─ keyword (#f6c177) ⭐ - MANGO
+
+  name: string;
+  │     │
+  │     └─ type (#f6c177) ⭐ - MANGO
+  └─ property (#9ccfd8) - foam
+
+  age: number;
+  │    │
+  │    └─ type (#f6c177) ⭐ - MANGO
+  └─ property (#9ccfd8) - foam
+}
+
+CSS:
+────
+.container {
+ │         │
+ │         └─ bracket (#908caa) - subtle
+ └─ (class selector)
+
+  color: #f6c177;
+  │      │
+  │      └─ string/number (color value)
+  └─ property (#9ccfd8) - foam
+}
+
+Markdown:
+─────────
+# Título Principal
+│ │
+│ └─ title (#c4a7e7) - iris
+└─ punctuation (#908caa) - subtle
+
+[Link Text](https://url.com)
+ │          │
+ │          └─ link_uri (#31748f) - pine
+ └─ link_text (#31748f) - pine
+
+**bold** *italic* `code`
+│        │        │
+│        │        └─ string (#f6c177) ⭐ - MANGO
+│        └─ emphasis (#31748f) - pine
+└─ emphasis (#31748f) - pine
+
+═══════════════════════════════════════════════════════════════════════════════
+                      🎨 IDEAS DE PERSONALIZACIÓN
+═══════════════════════════════════════════════════════════════════════════════
+
+💡 Idea 1: Strings más sutiles
+───────────────────────────────
+Si los strings en mango son muy "loud" para vos:
+  string = "#9ccfd8"  (foam, como propiedades)
+  string = "#c4a7e7"  (iris, púrpura suave)
+
+💡 Idea 2: Funciones más destacadas que keywords
+──────────────────────────────────────────────────
+Si querés que las funciones se destaquen AÚN MÁS:
+  function_ = "#FFB86C"  (naranja más brillante)
+  keyword = "#f6c177"    (mango, mantener)
+
+💡 Idea 3: Comentarios más visibles
+────────────────────────────────────
+Si necesitás ver mejor los comentarios:
+  comment = "#908caa"  (subtle, más claro)
+
+💡 Idea 4: Tema más "warm"
+──────────────────────────
+Para un tema más cálido:
+  fg = "#f0e0d0"  (texto más cálido/beige)
+
+💡 Idea 5: Keywords en azul eléctrico
+──────────────────────────────────────
+Para un look más "clásico":
+  keyword = "#61AFEF"    (azul)
+  function_ = "#C678DD"  (púrpura)
+  string = "#98C379"     (verde)
+
+═══════════════════════════════════════════════════════════════════════════════
+                      🚀 CÓMO PROBAR TUS CAMBIOS
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Editá: /home/ikaros/works/Marlyn-theme/lua/marlyn/variant.lua
+
+2. Guardá el archivo: :w en Neovim
+
+3. Recargá el tema (opción A - más rápida):
+   :lua package.loaded['marlyn'] = nil
+   :lua package.loaded['marlyn.variant'] = nil
+   :colorscheme marlyn
+
+4. O recargá el tema (opción B - más completa):
+   :source $MYVIMRC
+
+5. O simplemente: :q y abrí Neovim de nuevo
+
+═══════════════════════════════════════════════════════════════════════════════
+                      📊 PALETA COMPLETA DE COLORES
+═══════════════════════════════════════════════════════════════════════════════
+
+Rose Pine Colors:
+─────────────────
+Base        #191724  ████  Fondo principal
+Surface     #1f1d2e  ████  Fondo secundario
+Overlay     #26233a  ████  Fondo terciario
+Muted       #6e6a86  ████  Texto apagado
+Subtle      #908caa  ████  Texto secundario
+Text        #e0def4  ████  Texto principal
+Love        #eb6f92  ████  Rojo/rosa
+Gold        #f6c177  ████  MANGO ⭐
+Rose        #ea9a97  ████  Rosa/naranja
+Pine        #31748f  ████  Azul verdoso
+Foam        #9ccfd8  ████  Cyan/verde agua
+Iris        #c4a7e7  ████  Púrpura
+
+Mango Accent:
+─────────────
+Mango       #f6c177  ████  ⭐⭐⭐ COLOR ESTRELLA
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Created with ❤️ for the Marlyn Theme
+Rose Pine palette + Mango accent = Pure coding zen
+
+═══════════════════════════════════════════════════════════════════════════════

@@ -8,7 +8,7 @@ return {
 
 	-- Elementos de UI
 	ColorColumn = { bg = p.gray1 },
-	CursorLine = { bg = p.gray1 },
+	CursorLine = { bg = p.gray2 },
 	Conceal = { fg = p.gray1 },
 	SignColumn = { bg = p.bg, fg = p.fg_muted },
 	FoldColumn = { bg = p.bg, fg = p.fg_muted },
