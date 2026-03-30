@@ -262,133 +262,134 @@ local palettes = {
 	},
 
 	-- ═══════════════════════════════════════════════════════════════════
-	-- 🌙 MOONLIGHT VARIANT - Nueva paleta única con tonos neutros y pasteles luminosos
-	-- Inspirada en la luz de la luna - tonos fríos, neutros y pasteles con 20% brillo
+	-- 🌌 AURORA VARIANT - Paleta única inspirada en auroras boreales
+	-- Colores vibrantes pero suaves con tonos verde/azul/púrpura mágicos
+	-- Diseñada desde cero con una estética única y misteriosa
 	-- ═══════════════════════════════════════════════════════════════════
-	moonlight = {
+	aurora = {
 		bg_dark = "none",
 		gray0 = "none",
 
-		-- Backgrounds con tonos azul-gris suaves
-		gray1 = "#1c1e26",        -- Fondo principal (azul oscuro neutro)
-		gray2 = "#24262f",        -- Fondo secundario
-		gray3 = "#2d3038",        -- Fondo terciario
-		gray4 = "#363941",        -- Fondo elevado
-		gray5 = "#b0b3bd",        -- Gris azulado medio
+		-- Backgrounds oscuros con tinte púrpura/azul profundo
+		gray1 = "#1a1b26",        -- Fondo principal (noche ártica)
+		gray2 = "#1f2030",        -- Fondo secundario
+		gray3 = "#24263a",        -- Fondo terciario
+		gray4 = "#2a2d44",        -- Fondo elevado
+		gray5 = "#9d9eb8",        -- Gris lavanda
 
-		-- Surface colors con toque lunar
-		surface0 = "#1c1e26",
-		surface1 = "#24262f",
-		surface2 = "#2d3038",
+		-- Surface colors con aura mística
+		surface0 = "#1a1b26",
+		surface1 = "#1f2030",
+		surface2 = "#24263a",
 
 		-- LSP highlighting
-		lsp_reference_bg = "#323540",
+		lsp_reference_bg = "#2d2f45",
 
-		-- Foreground con tonos fríos luminosos
-		fg = "#e3e5eb",           -- Texto principal (blanco lunar)
-		black = "#1c1e26",
-		white = "#f2f4f8",        -- Blanco brillante con toque azul
-		fg_muted = "#b0b3bd",     -- Gris azulado
-		fg_placeholder = "#858896",
-		fg_disabled = "#6f7280",
-		accent = "#d4c8e8",       -- Accent lavanda luminoso
+		-- Foreground con tonos fríos brillantes
+		fg = "#d5d8e8",           -- Texto principal (blanco hielo)
+		black = "#1a1b26",
+		white = "#e8ebf5",        -- Blanco brillante
+		fg_muted = "#9d9eb8",     -- Gris lavanda
+		fg_placeholder = "#7a7b95",
+		fg_disabled = "#5f6078",
+		accent = "#a7c7e7",       -- Accent azul aurora
 
-		-- Base colors: Paleta MOONLIGHT única 🌙
-		-- Tonos pasteles fríos con 20% de luminosidad
-		red = "#f0b4bb",          -- Rosa perla suave
-		green = "#b8e6d5",        -- Verde menta glacial
-		yellow = "#f7e8c8",       -- Crema lunar
-		purple = "#d4c8e8",       -- Lavanda luminosa
-		magenta = "#e8d4e8",      -- Malva lunar
-		orange = "#f5d4c4",       -- Durazno suave
-		blue = "#c4d8ed",         -- Azul hielo pastel
-		cyan = "#c8e8e8",         -- Aqua glacial
+		-- Base colors: Paleta AURORA 🌌
+		-- Colores inspirados en auroras boreales - mágicos y vibrantes
+		red = "#e77b9c",          -- Rosa aurora suave
+		green = "#7dd3c0",        -- Verde aurora (turquesa)
+		yellow = "#e5c890",       -- Oro cálido suave
+		purple = "#b4a7d6",       -- Púrpura nebulosa
+		magenta = "#d4a7d6",      -- Magenta aurora
+		orange = "#e8af92",       -- Coral suave
+		blue = "#82aaff",         -- Azul aurora brillante
+		cyan = "#76e6e6",         -- Cyan eléctrico suave
 
-		-- Bright colors: Versiones con brillo lunar
-		bright_black = "#858896",
-		bright_red = "#ffc8cf",
-		bright_green = "#cef5e8",
-		bright_yellow = "#fffae0",
-		bright_magenta = "#f5e3f5",
-		bright_orange = "#ffe8d8",
-		bright_blue = "#d8e8ff",
-		bright_cyan = "#dff5f5",
-		bright_purple = "#e8dcf5",
+		-- Bright colors: Versiones ultra luminosas (efecto aurora)
+		bright_black = "#7a7b95",
+		bright_red = "#ff8fae",
+		bright_green = "#8ff5e0",
+		bright_yellow = "#ffdaa8",
+		bright_magenta = "#e8b8ff",
+		bright_orange = "#ffcaa8",
+		bright_blue = "#a3c8ff",
+		bright_cyan = "#8ffffe",
+		bright_purple = "#cebdff",
 
-		selection = "#323540",
+		selection = "#2d2f45",
 
-		-- Diffs con tonos lunares
-		diff_add_bg = "#2d4038",
-		diff_change_bg = "#403c2d",
-		diff_delete_bg = "#402d32",
-		diff_text_bg = "#4a3f30",
+		-- Diffs con aura
+		diff_add_bg = "#243530",
+		diff_change_bg = "#2f2d20",
+		diff_delete_bg = "#332228",
+		diff_text_bg = "#3d352a",
 
 		-- ═══════════════════════════════════════════════════════
-		-- SINTAXIS CON COLORES MOONLIGHT
+		-- SINTAXIS CON COLORES AURORA
 		-- ═══════════════════════════════════════════════════════
 
 		-- === 1. COMENTARIOS ===
-		comment = "#858896",
-		comment_doc = "#a3a6b3",
-		predoc = "#a3a6b3",
-		predictive = "#858896",
+		comment = "#7a7b95",
+		comment_doc = "#9899b3",
+		predoc = "#9899b3",
+		predictive = "#7a7b95",
 
 		-- === 2. KEYWORDS ===
-		keyword = "#f0b4bb",      -- Rosa perla
+		keyword = "#e77b9c",      -- Rosa aurora
 
 		-- === 3. FUNCIONES Y CLASES ===
-		function_ = "#d4c8e8",    -- Lavanda luminosa
-		constructor = "#f7e8c8",  -- Crema lunar
+		function_ = "#b4a7d6",    -- Púrpura nebulosa
+		constructor = "#e5c890",  -- Oro cálido
 
 		-- === 4. VARIABLES ===
-		variable = "#e3e5eb",     -- Blanco lunar
-		variable_member = "#d4c8e8",
-		variable_parameter = "#f2f4f8",
-		variable_special = "#f5d4c4",  -- Durazno suave
+		variable = "#d5d8e8",     -- Blanco hielo
+		variable_member = "#b4a7d6",
+		variable_parameter = "#e8ebf5",
+		variable_special = "#e8af92",  -- Coral suave
 
 		-- === 5. CONSTANTES Y NÚMEROS ===
-		constant = "#ebd8c8",
-		number = "#ebd8c8",
+		constant = "#d9c5a8",
+		number = "#d9c5a8",
 
 		-- === 6. TIPOS ===
-		type = "#c4d8ed",         -- Azul hielo
-		type_interface = "#c4d8ed",
-		type_super = "#d8e8ff",
+		type = "#82aaff",         -- Azul aurora brillante
+		type_interface = "#82aaff",
+		type_super = "#a3c8ff",
 
 		-- === 7. STRINGS ===
-		string = "#f7e8c8",       -- Crema lunar
-		string_escape = "#f0b4bb",
-		string_regex = "#f0b4bb",
-		string_special = "#e8d4e8",
-		string_special_symbol = "#f0b4bb",
+		string = "#e5c890",       -- Oro cálido
+		string_escape = "#e77b9c",
+		string_regex = "#e77b9c",
+		string_special = "#d4a7d6",
+		string_special_symbol = "#e77b9c",
 
 		-- === 8. PROPIEDADES Y ENUMS ===
-		property = "#b8e6d5",     -- Verde menta glacial
-		enum = "#b8e6d5",
+		property = "#7dd3c0",     -- Verde aurora (turquesa)
+		enum = "#7dd3c0",
 
 		-- === 9. OPERADORES Y PUNTUACIÓN ===
-		operator = "#b0b3bd",
-		punctuation = "#a3a6b3",
-		bracket = "#c8e8e8",      -- Aqua glacial
-		delimiter = "#858896",
+		operator = "#9d9eb8",
+		punctuation = "#9899b3",
+		bracket = "#76e6e6",      -- Cyan eléctrico suave
+		delimiter = "#7a7b95",
 
 		-- === 10. TAGS Y MARKUP ===
-		tag = "#f0b4bb",
-		title = "#e8d4e8",
+		tag = "#e77b9c",
+		title = "#d4a7d6",
 
 		-- === 11. ENLACES ===
-		link_text = "#c4d8ed",
-		link_uri = "#c4d8ed",
+		link_text = "#82aaff",
+		link_uri = "#82aaff",
 
 		-- === 12. CÓDIGO ESPECIAL ===
-		embedded = "#e8d4e8",
-		embphasis = "#d4c8e8",
-		text_literal = "#b8e6d5",
+		embedded = "#d4a7d6",
+		embphasis = "#b4a7d6",
+		text_literal = "#7dd3c0",
 
 		-- === 13. UTILIDADES ===
-		hint = "#a3a6b3",
-		variant = "#e8d4e8",
-		primary = "#e3e5eb",
+		hint = "#9899b3",
+		variant = "#d4a7d6",
+		primary = "#d5d8e8",
 
 		none = "NONE",
 	},

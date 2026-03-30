@@ -5,7 +5,7 @@ A beautifully balanced Neovim color scheme featuring a harmonious mix of muted a
 ## ✨ Features
 
 - 🎯 **Balanced Color Palette**: Perfect blend of muted and vibrant colors
-- 🎨 **Three Variants**: Choose between `pastel` (soft & neutral), `vibrant` (intense & saturated), or `moonlight` (cool & luminous)
+- 🎨 **Three Variants**: Choose between `pastel` (soft & neutral), `vibrant` (intense & saturated), or `aurora` (magical northern lights)
 - 🌙 **Dark Background**: Easy on the eyes for long coding sessions
 - 🔌 **Extensive Plugin Support**: Integration with 20+ popular Neovim plugins
 - 🎨 **Terminal Support**: Configs for Alacritty, Kitty, iTerm2, Ghostty, and more
@@ -60,7 +60,7 @@ Default configuration:
 
 ```lua
 require("marlyn").setup({
-  variant = "pastel", -- Theme variant: "pastel" (default), "vibrant", or "moonlight"
+  variant = "pastel", -- Theme variant: "pastel" (default), "vibrant", or "aurora"
   terminal_colors = true, -- Configure terminal colors
   
   -- Customize syntax styles
@@ -148,11 +148,11 @@ require("marlyn").setup({
 vim.cmd("colorscheme marlyn")
 ```
 
-### Example: Use Moonlight Variant
+### Example: Use Aurora Variant
 
 ```lua
 require("marlyn").setup({
-  variant = "moonlight", -- Cool neutral tones with 20% luminosity (NEW!)
+  variant = "aurora", -- Magical northern lights colors (NEW!)
 })
 vim.cmd("colorscheme marlyn")
 ```
@@ -280,33 +280,33 @@ High contrast color palette with 30% more saturation for maximum visual impact.
 
 ---
 
-### Moonlight Variant 🌙
+### Aurora Variant 🌌
 
-A unique color palette with cool neutral tones and 20% luminosity - inspired by moonlight.
+A magical color palette inspired by northern lights - vibrant yet soft with mystical aurora borealis tones.
 
 #### Base Colors
 | Color | Hex | Preview |
 |-------|-----|---------|
-| Red | `#f0b4bb` | ![](https://via.placeholder.com/50x20/f0b4bb/f0b4bb.png) |
-| Green | `#b8e6d5` | ![](https://via.placeholder.com/50x20/b8e6d5/b8e6d5.png) |
-| Yellow | `#f7e8c8` | ![](https://via.placeholder.com/50x20/f7e8c8/f7e8c8.png) |
-| Blue | `#c4d8ed` | ![](https://via.placeholder.com/50x20/c4d8ed/c4d8ed.png) |
-| Purple | `#d4c8e8` | ![](https://via.placeholder.com/50x20/d4c8e8/d4c8e8.png) |
-| Cyan | `#c8e8e8` | ![](https://via.placeholder.com/50x20/c8e8e8/c8e8e8.png) |
-| Orange | `#f5d4c4` | ![](https://via.placeholder.com/50x20/f5d4c4/f5d4c4.png) |
-| Magenta | `#e8d4e8` | ![](https://via.placeholder.com/50x20/e8d4e8/e8d4e8.png) |
+| Red | `#e77b9c` | ![](https://via.placeholder.com/50x20/e77b9c/e77b9c.png) |
+| Green | `#7dd3c0` | ![](https://via.placeholder.com/50x20/7dd3c0/7dd3c0.png) |
+| Yellow | `#e5c890` | ![](https://via.placeholder.com/50x20/e5c890/e5c890.png) |
+| Blue | `#82aaff` | ![](https://via.placeholder.com/50x20/82aaff/82aaff.png) |
+| Purple | `#b4a7d6` | ![](https://via.placeholder.com/50x20/b4a7d6/b4a7d6.png) |
+| Cyan | `#76e6e6` | ![](https://via.placeholder.com/50x20/76e6e6/76e6e6.png) |
+| Orange | `#e8af92` | ![](https://via.placeholder.com/50x20/e8af92/e8af92.png) |
+| Magenta | `#d4a7d6` | ![](https://via.placeholder.com/50x20/d4a7d6/d4a7d6.png) |
 
 #### Bright Colors
 | Color | Hex | Preview |
 |-------|-----|---------|
-| Bright Red | `#ffc8cf` | ![](https://via.placeholder.com/50x20/ffc8cf/ffc8cf.png) |
-| Bright Green | `#cef5e8` | ![](https://via.placeholder.com/50x20/cef5e8/cef5e8.png) |
-| Bright Yellow | `#fffae0` | ![](https://via.placeholder.com/50x20/fffae0/fffae0.png) |
-| Bright Blue | `#d8e8ff` | ![](https://via.placeholder.com/50x20/d8e8ff/d8e8ff.png) |
-| Bright Purple | `#e8dcf5` | ![](https://via.placeholder.com/50x20/e8dcf5/e8dcf5.png) |
-| Bright Cyan | `#dff5f5` | ![](https://via.placeholder.com/50x20/dff5f5/dff5f5.png) |
-| Bright Orange | `#ffe8d8` | ![](https://via.placeholder.com/50x20/ffe8d8/ffe8d8.png) |
-| Bright Magenta | `#f5e3f5` | ![](https://via.placeholder.com/50x20/f5e3f5/f5e3f5.png) |
+| Bright Red | `#ff8fae` | ![](https://via.placeholder.com/50x20/ff8fae/ff8fae.png) |
+| Bright Green | `#8ff5e0` | ![](https://via.placeholder.com/50x20/8ff5e0/8ff5e0.png) |
+| Bright Yellow | `#ffdaa8` | ![](https://via.placeholder.com/50x20/ffdaa8/ffdaa8.png) |
+| Bright Blue | `#a3c8ff` | ![](https://via.placeholder.com/50x20/a3c8ff/a3c8ff.png) |
+| Bright Purple | `#cebdff` | ![](https://via.placeholder.com/50x20/cebdff/cebdff.png) |
+| Bright Cyan | `#8ffffe` | ![](https://via.placeholder.com/50x20/8ffffe/8ffffe.png) |
+| Bright Orange | `#ffcaa8` | ![](https://via.placeholder.com/50x20/ffcaa8/ffcaa8.png) |
+| Bright Magenta | `#e8b8ff` | ![](https://via.placeholder.com/50x20/e8b8ff/e8b8ff.png) |
 
 ## 🤝 Contributing
 

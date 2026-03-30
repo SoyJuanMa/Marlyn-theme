@@ -46,25 +46,25 @@ local palettes = {
 		muted = "#9499a3",
 		overlay = "#2a2d36",
 	},
-	moonlight = {
-		-- Base colors - Tonos lunares
-		bg = "#1c1e26",
-		fg = "#e3e5eb",
+	aurora = {
+		-- Base colors - Tonos aurora boreales
+		bg = "#1a1b26",
+		fg = "#d5d8e8",
 
-		-- Paleta MOONLIGHT 🌙 (tonos fríos con 20% brillo)
-		yellow = "#f7e8c8",   -- Crema lunar
-		red = "#f0b4bb",      -- Rosa perla
-		green = "#b8e6d5",    -- Verde menta glacial
-		purple = "#d4c8e8",   -- Lavanda luminosa
-		orange = "#f5d4c4",   -- Durazno suave
-		blue = "#c4d8ed",     -- Azul hielo
-		cyan = "#c8e8e8",     -- Aqua glacial
-		magenta = "#e8d4e8",  -- Malva lunar
+		-- Paleta AURORA 🌌 (inspirada en auroras boreales)
+		yellow = "#e5c890",   -- Oro cálido
+		red = "#e77b9c",      -- Rosa aurora
+		green = "#7dd3c0",    -- Verde aurora (turquesa)
+		purple = "#b4a7d6",   -- Púrpura nebulosa
+		orange = "#e8af92",   -- Coral suave
+		blue = "#82aaff",     -- Azul aurora brillante
+		cyan = "#76e6e6",     -- Cyan eléctrico suave
+		magenta = "#d4a7d6",  -- Magenta aurora
 
-		-- Utility colors - Grises azulados
-		subtle = "#a3a6b3",
-		muted = "#858896",
-		overlay = "#2d3038",
+		-- Utility colors - Grises lavanda
+		subtle = "#9899b3",
+		muted = "#7a7b95",
+		overlay = "#24263a",
 	},
 }
 
