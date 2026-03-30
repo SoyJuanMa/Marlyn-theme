@@ -11,9 +11,8 @@
   priority = 1000,
   config = function()
     require("marlyn").setup({
-      -- Optional configuration here
+      variant = "pastel", -- Theme variant: "pastel" (default), "vibrant", or "aurora"
     })
-    vim.cmd("colorscheme marlyn")
   end,
 }
 ```
