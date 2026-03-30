@@ -1,6 +1,6 @@
 local p = require("marlyn.palette")
 return {
-	IlluminatedWordText = { bg = p.bracket },
-	IlluminatedWordRead = { bg = p.bracket },
-	IlluminatedWordWrite = { bg = p.bracket },
+	IlluminatedWordText = { bg = "#25272e" },  -- Gris tenue para no cegar
+	IlluminatedWordRead = { bg = "#25272e" },  -- Gris tenue para no cegar
+	IlluminatedWordWrite = { bg = "#25272e" }, -- Gris tenue para no cegar
 }
