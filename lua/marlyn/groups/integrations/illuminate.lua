@@ -1,6 +1,6 @@
 local p = require("marlyn.palette")
 return {
-	IlluminatedWordText = { bg = "#25272e" },  -- Gris tenue para no cegar
-	IlluminatedWordRead = { bg = "#25272e" },  -- Gris tenue para no cegar
-	IlluminatedWordWrite = { bg = "#25272e" }, -- Gris tenue para no cegar
+	IlluminatedWordText = { bg = "#2d3544" },  -- Azul grisáceo oscuro
+	IlluminatedWordRead = { bg = "#2d3544" },  -- Azul grisáceo oscuro
+	IlluminatedWordWrite = { bg = "#2d3544" }, -- Azul grisáceo oscuro
 }
