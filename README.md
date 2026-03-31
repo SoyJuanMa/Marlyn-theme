@@ -8,7 +8,7 @@
 
 ```lua
 {
-  "ikaros/Marlyn-theme",
+  "SoyJuanMa/Marlyn-theme",
   lazy = false,
   priority = 1000,
   config = function()
