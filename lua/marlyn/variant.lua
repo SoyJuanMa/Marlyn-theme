@@ -131,6 +131,137 @@ local palettes = {
 	},
 
 	-- ═══════════════════════════════════════════════════════════════════
+	-- 🖤 PASTEL OLED VARIANT - Versión OLED con negro puro
+	-- Mismos colores pasteles pero con fondos negros puros para pantallas OLED
+	-- ═══════════════════════════════════════════════════════════════════
+	pastel_oled = {
+		bg_dark = "none",
+		gray0 = "none",
+
+		-- Backgrounds: Negro puro OLED
+		gray1 = "#000000",        -- Fondo principal (negro puro OLED)
+		gray2 = "#0a0a0a",        -- Fondo secundario (casi negro)
+		gray3 = "#121212",        -- Fondo terciario
+		gray4 = "#1a1a1a",        -- Fondo elevado
+		gray5 = "#a8abb5",        -- Gris medio (más claro)
+
+		-- Surface colors con negro puro
+		surface0 = "#000000",
+		surface1 = "#0a0a0a",
+		surface2 = "#121212",
+
+		-- LSP highlighting
+		lsp_reference_bg = "#1a1a1a",  -- Gris tenue para no cegar
+
+		-- Foreground neutros (mismo que pastel)
+		fg = "#e0e1e6",           -- Texto principal (más claro)
+		black = "#000000",
+		white = "#f0f1f5",        -- Blanco más brillante
+		fg_muted = "#a8abb5",     -- Texto apagado (más visible)
+		fg_placeholder = "#7d8088",
+		fg_disabled = "#6c6f79",
+		accent = "#ecc6b2",       -- Accent beige/rosa (más saturado)
+
+		-- Base colors: Paleta PASTEL más viva 🎨 (+2 tonos)
+		red = "#e5a5a5",          -- Rosa pastel más vivo
+		green = "#b5daba",        -- Verde menta más brillante
+		yellow = "#f5e5b9",       -- Amarillo crema más luminoso
+		purple = "#c9baeb",       -- Lavanda más saturada
+		magenta = "#eac9ea",      -- Magenta pastel más vivo
+		orange = "#f5c9b2",       -- Melocotón más saturado
+		blue = "#aec8eb",         -- Azul cielo más brillante
+		cyan = "#b9e5e5",         -- Cyan aguamarina más vivo
+
+		-- Bright colors: Versiones aún más vivas
+		bright_black = "#7d8088",
+		bright_red = "#f5b7b7",
+		bright_green = "#c9ebce",
+		bright_yellow = "#fff7d0",
+		bright_magenta = "#fcdbfc",
+		bright_orange = "#ffdcca",
+		bright_blue = "#c4dbfd",
+		bright_cyan = "#cff7f7",
+		bright_purple = "#deccfd",
+
+		selection = "#1a1a1a",
+
+		-- Diffs con fondos más oscuros
+		diff_add_bg = "#0a2515",
+		diff_change_bg = "#251f0a",
+		diff_delete_bg = "#25151a",
+		diff_text_bg = "#302515",
+
+		-- ═══════════════════════════════════════════════════════
+		-- SINTAXIS CON COLORES PASTELES MÁS VIVOS (mismo que pastel)
+		-- ═══════════════════════════════════════════════════════
+
+		-- === 1. COMENTARIOS ===
+		comment = "#7d8088",
+		comment_doc = "#9b9ea8",
+		predoc = "#9b9ea8",
+		predictive = "#7d8088",
+
+		-- === 2. KEYWORDS ===
+		keyword = "#e5a5a5",      -- Rosa pastel más vivo
+
+		-- === 3. FUNCIONES Y CLASES ===
+		function_ = "#c9baeb",    -- Lavanda más saturada
+		constructor = "#f5e5b9",  -- Amarillo crema más luminoso
+
+		-- === 4. VARIABLES ===
+		variable = "#e0e1e6",     -- Gris claro neutral (más brillante)
+		variable_member = "#c9baeb",
+		variable_parameter = "#f0f1f5",
+		variable_special = "#f5c9b2",  -- Melocotón más saturado
+
+		-- === 5. CONSTANTES Y NÚMEROS ===
+		constant = "#e9d5c2",
+		number = "#e9d5c2",
+
+		-- === 6. TIPOS ===
+		type = "#aec8eb",         -- Azul cielo más brillante
+		type_interface = "#aec8eb",
+		type_super = "#c4dbfd",
+
+		-- === 7. STRINGS ===
+		string = "#f5e5b9",       -- Amarillo crema más luminoso
+		string_escape = "#e5a5a5",
+		string_regex = "#e5a5a5",
+		string_special = "#eac9ea",
+		string_special_symbol = "#e5a5a5",
+
+		-- === 8. PROPIEDADES Y ENUMS ===
+		property = "#b5daba",     -- Verde menta más brillante
+		enum = "#b5daba",
+
+		-- === 9. OPERADORES Y PUNTUACIÓN ===
+		operator = "#a8abb5",
+		punctuation = "#9b9ea8",
+		bracket = "#b9e5e5",      -- Cyan aguamarina más vivo
+		delimiter = "#7d8088",
+
+		-- === 10. TAGS Y MARKUP ===
+		tag = "#e5a5a5",
+		title = "#eac9ea",
+
+		-- === 11. ENLACES ===
+		link_text = "#aec8eb",
+		link_uri = "#aec8eb",
+
+		-- === 12. CÓDIGO ESPECIAL ===
+		embedded = "#eac9ea",
+		embphasis = "#c9baeb",
+		text_literal = "#b5daba",
+
+		-- === 13. UTILIDADES ===
+		hint = "#9b9ea8",
+		variant = "#eac9ea",
+		primary = "#e0e1e6",
+
+		none = "NONE",
+	},
+
+	-- ═══════════════════════════════════════════════════════════════════
 	-- 🔥 VIBRANT VARIANT - Colores 30% más saturados e intensos
 	-- Paleta vibrante con colores más fuertes para máximo contraste visual
 	-- ═══════════════════════════════════════════════════════════════════

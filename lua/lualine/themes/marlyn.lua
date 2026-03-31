@@ -26,6 +26,26 @@ local palettes = {
 		muted = "#7d8088",
 		overlay = "#2a2d36",
 	},
+	pastel_oled = {
+		-- Base colors - Negro puro OLED
+		bg = "#000000",
+		fg = "#e0e1e6",
+
+		-- Paleta PASTEL 🖤 (mismo que pastel pero fondo negro)
+		yellow = "#f5e5b9",   -- Amarillo crema más luminoso
+		red = "#e5a5a5",      -- Rosa pastel más vivo
+		green = "#b5daba",    -- Verde menta más brillante
+		purple = "#c9baeb",   -- Lavanda más saturada
+		orange = "#f5c9b2",   -- Melocotón más saturado
+		blue = "#aec8eb",     -- Azul cielo más brillante
+		cyan = "#b9e5e5",     -- Aguamarina más vivo
+		magenta = "#eac9ea",  -- Magenta pastel más vivo
+
+		-- Utility colors - Grises neutros
+		subtle = "#9b9ea8",
+		muted = "#7d8088",
+		overlay = "#121212",
+	},
 	vibrant = {
 		-- Base colors - Fondos oscuros
 		bg = "#1a1d23",
