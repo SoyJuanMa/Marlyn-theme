@@ -36,16 +36,22 @@ return {
 	["@lsp.typemod.type.defaultLibrary"] = { fg = p.type },
 	["@lsp.typemod.variable.defaultLibrary"] = { link = "@variable.builtin" },
 	["@lsp.typemod.variable.injected"] = { link = "@variable" },
-	-- Diagnostics con subtle backgrounds
-	DiagnosticOk = { fg = p.enum },
-	DiagnosticError = { fg = p.variable },
-	DiagnosticWarn = { fg = p.string },
-	DiagnosticInfo = { fg = p.function_ },
+	-- Diagnostics con colores correctos
+	DiagnosticOk = { fg = p.green },
+	DiagnosticError = { fg = p.red },
+	DiagnosticWarn = { fg = p.yellow },
+	DiagnosticInfo = { fg = p.blue },
 	DiagnosticHint = { fg = p.cyan },
 	DiagnosticUnderlineError = { bg = p.surface0 },
 	DiagnosticUnderlineWarn = { bg = p.surface0 },
 	DiagnosticUnderlineInfo = { bg = p.surface0 },
 	DiagnosticUnderlineHint = { bg = p.surface0 },
+
+	-- Lualine diagnostics (para que aparezcan con color)
+	LualineDiagnosticError = { fg = p.red, bg = p.gray1 },
+	LualineDiagnosticWarn = { fg = p.yellow, bg = p.gray1 },
+	LualineDiagnosticInfo = { fg = p.blue, bg = p.gray1 },
+	LualineDiagnosticHint = { fg = p.cyan, bg = p.gray1 },
 
 	-- LSP Reference highlighting con mejor contraste vs CursorLine
 	LspReferenceWrite = { bg = p.lsp_reference_bg },
