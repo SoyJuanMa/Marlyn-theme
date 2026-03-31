@@ -20,8 +20,8 @@ return {
 	Cursor = { fg = p.black, bg = p.fg },
 	lCursor = { fg = p.black, bg = p.fg },
 	CursorIM = { fg = p.black, bg = p.fg },
-	Visual = { bg = p.surface1, bold = true },
-	VisualNOS = { bg = p.surface1 },
+	Visual = { bg = p.visual_selection_bg, bold = true },
+	VisualNOS = { bg = p.visual_selection_bg },
 
 	-- Directorios y títulos
 	Directory = { fg = p.purple },
