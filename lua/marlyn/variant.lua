@@ -20,7 +20,7 @@ local palettes = {
 		surface2 = "#2a2d36",
 
 		-- LSP highlighting
-		lsp_reference_bg = "#3a4556",  -- Azul grisáceo medio
+		lsp_reference_bg = "#2d3544",  -- Azul grisáceo oscuro
 
 		-- Foreground neutros
 		fg = "#e0e1e6",           -- Texto principal (más claro)
@@ -151,7 +151,7 @@ local palettes = {
 		surface2 = "#2a2d36",
 
 		-- LSP highlighting
-		lsp_reference_bg = "#3a4556",  -- Azul grisáceo medio
+		lsp_reference_bg = "#2d3544",  -- Azul grisáceo oscuro
 
 		-- Foreground más brillantes
 		fg = "#f5f6fa",           -- Texto principal (muy brillante)
@@ -283,7 +283,7 @@ local palettes = {
 		surface2 = "#24263a",
 
 		-- LSP highlighting
-		lsp_reference_bg = "#3a4556",  -- Azul grisáceo medio
+		lsp_reference_bg = "#2d3544",  -- Azul grisáceo oscuro
 
 		-- Foreground con tonos fríos brillantes
 		fg = "#d5d8e8",           -- Texto principal (blanco hielo)
