@@ -22,8 +22,8 @@ local palettes = {
 		-- LSP highlighting
 		lsp_reference_bg = "#2d3544", -- Azul grisáceo oscuro
 
-		-- Visual mode selection (2 tonos más oscuro que illuminate)
-		visual_selection_bg = "#1e2533", -- Azul grisáceo muy oscuro para visual mode
+		-- Visual mode selection (3 tonos más claro que illuminate)
+		visual_selection_bg = "#4a5770", -- Azul grisáceo más claro para visual mode
 
 		-- Foreground neutros
 		fg = "#e0e1e6", -- Texto principal (más claro)
@@ -156,8 +156,8 @@ local palettes = {
 		-- LSP highlighting
 		lsp_reference_bg = "#2d3544", -- Azul grisáceo oscuro
 
-		-- Visual mode selection (2 tonos más oscuro que illuminate)
-		visual_selection_bg = "#1e2533", -- Azul grisáceo muy oscuro para visual mode
+		-- Visual mode selection (3 tonos más claro que illuminate)
+		visual_selection_bg = "#4a5770", -- Azul grisáceo más claro para visual mode
 
 		-- Foreground más brillantes
 		fg = "#f5f6fa", -- Texto principal (muy brillante)
@@ -291,8 +291,8 @@ local palettes = {
 		-- LSP highlighting
 		lsp_reference_bg = "#2d3544", -- Azul grisáceo oscuro
 
-		-- Visual mode selection (2 tonos más oscuro que illuminate)
-		visual_selection_bg = "#1e2533", -- Azul grisáceo muy oscuro para visual mode
+		-- Visual mode selection (3 tonos más claro que illuminate)
+		visual_selection_bg = "#4a5770", -- Azul grisáceo más claro para visual mode
 
 		-- Foreground con tonos fríos brillantes
 		fg = "#d5d8e8", -- Texto principal (blanco hielo)
