@@ -58,4 +58,7 @@ return {
 	LspReferenceText = { bg = p.lsp_reference_bg },
 	LspReferenceRead = { bg = p.lsp_reference_bg },
 	LspSignatureActiveParameter = { fg = p.operator, bold = true },
+
+	-- LSP Hover window borders
+	LspInfoBorder = { fg = p.white, bg = p.gray1 },
 }
