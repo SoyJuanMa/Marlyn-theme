@@ -13,7 +13,7 @@
   priority = 1000,
   config = function()
     require("marlyn").setup({
-      variant = "pastel", -- Theme variant: "pastel" (default), "vibrant", or "aurora"
+      variant = "pastel", -- Theme variant: "pastel" (default), "vibrant", "aurora", or "dragon"
     })
   end,
 }

@@ -402,6 +402,142 @@ local palettes = {
 
 		none = "NONE",
 	},
+
+	-- ═══════════════════════════════════════════════════════════════════
+	-- 🐉 DRAGON VARIANT - Inspirado en Kanagawa Dragon
+	-- Paleta terrosa y cálida con tonos mate y naturales
+	-- Colores inspirados en pinturas japonesas antiguas
+	-- ═══════════════════════════════════════════════════════════════════
+	dragon = {
+		bg_dark = "none",
+		gray0 = "none",
+
+		-- Backgrounds terrosos y cálidos (tonos papel washi)
+		gray1 = "#181616", -- Fondo principal (negro carbón)
+		gray2 = "#1d1c19", -- Fondo secundario
+		gray3 = "#282727", -- Fondo terciario
+		gray4 = "#363636", -- Fondo elevado
+		gray5 = "#a6a69c", -- Gris piedra
+
+		-- Surface colors
+		surface0 = "#181616",
+		surface1 = "#1d1c19",
+		surface2 = "#282727",
+
+		-- LSP highlighting (tono tierra oscuro)
+		lsp_reference_bg = "#2a2a22",
+
+		-- Visual mode selection
+		visual_selection_bg = "#3c3c33",
+
+		-- Foreground terrosos
+		fg = "#c5c9c5", -- Texto principal (gris cálido)
+		black = "#0d0c0c",
+		white = "#c5c9c5", -- Blanco apagado
+		fg_muted = "#a6a69c", -- Texto apagado
+		fg_placeholder = "#7a7a68",
+		fg_disabled = "#625e5a",
+		accent = "#c4b28a", -- Accent oro viejo
+
+		-- Base colors: Paleta DRAGON 🐉
+		-- Colores terrosos y mates inspirados en Kanagawa
+		red = "#c4746e", -- Rojo arcilla
+		green = "#8a9a7b", -- Verde musgo
+		yellow = "#c4b28a", -- Oro viejo / bambú
+		purple = "#a292a3", -- Púrpura polvo
+		magenta = "#b35b79", -- Magenta cereza oscuro
+		orange = "#b98d7b", -- Naranja terracota
+		blue = "#8ba4b0", -- Azul grisáceo
+		cyan = "#8ea4a2", -- Cyan jade
+
+		-- Bright colors: Versiones ligeramente más claras
+		bright_black = "#7a7a68",
+		bright_red = "#d7665b",
+		bright_green = "#98a589",
+		bright_yellow = "#d5c4a1",
+		bright_magenta = "#c66889",
+		bright_orange = "#caa587",
+		bright_blue = "#9db5c1",
+		bright_cyan = "#9fb5b3",
+		bright_purple = "#b4a3b5",
+
+		selection = "#2d2c2c",
+
+		-- Diffs terrosos
+		diff_add_bg = "#2b3328",
+		diff_change_bg = "#32302a",
+		diff_delete_bg = "#3f2e2e",
+		diff_text_bg = "#49443c",
+
+		-- ═══════════════════════════════════════════════════════
+		-- SINTAXIS CON COLORES DRAGON
+		-- ═══════════════════════════════════════════════════════
+
+		-- === 1. COMENTARIOS ===
+		comment = "#7a7a68",
+		comment_doc = "#8f8f7d",
+		predoc = "#8f8f7d",
+		predictive = "#7a7a68",
+
+		-- === 2. KEYWORDS ===
+		keyword = "#c4746e", -- Rojo arcilla
+
+		-- === 3. FUNCIONES Y CLASES ===
+		function_ = "#a292a3", -- Púrpura polvo
+		constructor = "#c4b28a", -- Oro viejo
+
+		-- === 4. VARIABLES ===
+		variable = "#c5c9c5", -- Gris cálido
+		variable_member = "#a292a3",
+		variable_parameter = "#c5c9c5",
+		variable_special = "#b98d7b", -- Naranja terracota
+
+		-- === 5. CONSTANTES Y NÚMEROS ===
+		constant = "#c4b28a",
+		number = "#c4b28a",
+
+		-- === 6. TIPOS ===
+		type = "#8ba4b0", -- Azul grisáceo
+		type_interface = "#8ba4b0",
+		type_super = "#9db5c1",
+
+		-- === 7. STRINGS ===
+		string = "#98a589", -- Verde musgo
+		string_escape = "#c4746e",
+		string_regex = "#c4746e",
+		string_special = "#b35b79",
+		string_special_symbol = "#c4746e",
+
+		-- === 8. PROPIEDADES Y ENUMS ===
+		property = "#8ea4a2", -- Cyan jade
+		enum = "#8ea4a2",
+
+		-- === 9. OPERADORES Y PUNTUACIÓN ===
+		operator = "#a6a69c",
+		punctuation = "#8f8f7d",
+		bracket = "#8ea4a2", -- Cyan jade
+		delimiter = "#7a7a68",
+
+		-- === 10. TAGS Y MARKUP ===
+		tag = "#c4746e",
+		title = "#b35b79",
+
+		-- === 11. ENLACES ===
+		link_text = "#8ba4b0",
+		link_uri = "#8ba4b0",
+
+		-- === 12. CÓDIGO ESPECIAL ===
+		embedded = "#b35b79",
+		embphasis = "#a292a3",
+		text_literal = "#8a9a7b",
+
+		-- === 13. UTILIDADES ===
+		hint = "#8f8f7d",
+		variant = "#b35b79",
+		primary = "#c5c9c5",
+
+		none = "NONE",
+	},
 }
 
 return function(variant)
