@@ -59,7 +59,7 @@ return {
 	Folded = { fg = p.gray4 },
 	MatchParen = { fg = p.accent, bg = p.surface1, bold = true },
 	NonText = { fg = p.fg_muted },
-	FloatBorder = { fg = p.gray5, bg = p.bg },
+	FloatBorder = { fg = p.white, bg = p.bg },
 	QuickFixLine = { fg = p.red, bg = p.surface1, bold = true },
 	SpecialKey = { fg = p.fg_muted },
 	SpellBad = { fg = p.orange, bg = p.surface0 },
