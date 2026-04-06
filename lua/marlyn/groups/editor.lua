@@ -4,7 +4,7 @@ return {
 	-- Fondo y texto principal
 	Normal = { fg = p.fg, bg = p.bg_dark },
 	NormalNC = { fg = p.fg, bg = p.bg_dark },
-	NormalFloat = { fg = p.fg, bg = p.gray0 },
+	NormalFloat = { fg = p.fg, bg = p.gray1 },
 
 	-- Elementos de UI
 	ColorColumn = { bg = p.gray1 },
@@ -59,7 +59,7 @@ return {
 	Folded = { fg = p.gray4 },
 	MatchParen = { fg = p.accent, bg = p.surface1, bold = true },
 	NonText = { fg = p.fg_muted },
-	FloatBorder = { fg = p.white, bg = p.bg },
+	FloatBorder = { fg = p.white, bg = p.gray1 },
 	QuickFixLine = { fg = p.red, bg = p.surface1, bold = true },
 	SpecialKey = { fg = p.fg_muted },
 	SpellBad = { fg = p.orange, bg = p.surface0 },
